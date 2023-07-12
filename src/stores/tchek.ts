@@ -26,6 +26,21 @@ export const useVehicleStore = defineStore('vehicle', {
                 'Content-Type': 'application/json',
             },
         }).then((response) => {this.clientLastName = response.data.tchek.report.clientLastName});
+    },
+    async getTchekToken(){
+      await axios.post('https://alto.tchek.fr/apiV1/tokenmanager/token', {
+            validity: 5, // en jours
+            shootInspect: true,
+            fastTrack: true,
+            report: true,
+            cost: false,
+            downloadRoi: false
+        }, {
+            headers: {
+                'X-API-Key': import.meta.env.VITE_API_KEY,
+                'Content-Type': 'application/json',
+            },
+      }).then((response) => {this.token = response.data.token.uid});
     }
   },
 
