@@ -1,10 +1,8 @@
 <template>
     <div>
         <h1 class="text-center bold">IFrame Tchek Testing</h1>
-        <ul> {{ info.data.tchek.report.clientLastName }}
-            <li v-for="(value, key) in info" :key="key">
-                {{ key }}: {{ value }}
-            </li>
+        <ul> {{ vehiculeStore.clientLastName }}
+            
         </ul>
             <iframe class="w-full h-[850px]" :class="[!isValide ? 'block' : 'hidden']" id="iframe" :src="iframeSrc"
                 allow="camera *;microphone *"></iframe>
@@ -19,30 +17,18 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import { useVehicleStore }from '@/stores/tchek';
 import axios from 'axios';
 const isValide = ref(false);
 const iframeSrc = ref('');
 const rapportSrc = ref('');
-const info = ref('');
+const vehiculeStore = useVehicleStore();
 let token = '';
 
 
 const valider = async () => {
     isValide.value = true;
-    try {
-        const response = await axios.get('https://alto.tchek.fr/apiV1/report/loadtchek', {
-            params: {
-                token: token
-            },
-            headers: {
-                'X-API-Key': import.meta.env.VITE_API_KEY,
-                'Content-Type': 'application/json',
-            },
-        });
-        info.value = response.data;
-    } catch (error) {
-        console.error(error);
-    }
+    useVehicleStore().getTchekReport()
 };
 
 onMounted(async () => {
