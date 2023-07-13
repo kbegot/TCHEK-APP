@@ -11,7 +11,8 @@ const initialState = {
   clientLastName: null
 }
 
-export const useVehicleStore = defineStore('vehicle', {
+export const useVehicleStore = defineStore({
+  id: 'Tchek',
   state: (): State => {
     return JSON.parse(JSON.stringify(initialState));
   },
@@ -41,7 +42,30 @@ export const useVehicleStore = defineStore('vehicle', {
                 'Content-Type': 'application/json',
             },
       }).then((response) => {this.token = response.data.token.uid});
-    }
+    },
+
+    
+  //   async getTchekToken(){
+  //   try {
+  //     const response = await axios.post('https://alto.tchek.fr/apiV1/tokenmanager/token', {
+  //         validity: 5, // en jours
+  //         shootInspect: true,
+  //         fastTrack: true,
+  //         report: true,
+  //         cost: false,
+  //         downloadRoi: false
+  //     }, {
+  //         headers: {
+  //             'X-API-Key': import.meta.env.VITE_API_KEY,
+  //             'Content-Type': 'application/json',
+  //         },
+  //     });
+  //     this.token = response.data.token.uid;      
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  //   }
+  
   },
 
 });
