@@ -32,28 +32,21 @@ export const useVehicleStore = defineStore({
             },
       }).then((response) => {this.token = response.data.token.uid});
     },
-    async getTchekReport(){
-      try {
-        const response = await axios.get('https://alto.tchek.fr/apiV1/report/loadtchek', {
+
+    async getTchekReport() {
+      await axios.get('https://alto.tchek.fr/apiV1/report/loadtchek', {
           params: {
-            token: this.token
+            token: 'T99D610'
           },
           headers: {
             'X-API-Key': import.meta.env.VITE_API_KEY,
             'Content-Type': 'application/json',
           },
+        }).then((response) => {
+          console.log(response.data.data.damages);
+          
         });
-    
-        if (response.data && response.data.tchek && response.data.tchek.report) {
-          this.clientLastName = response.data.tchek.report.clientLastName;
-        } else {
-            
-        }
-      } catch (error) {
-      }
-   },
-  
-  },
-
+    }
+  }  
 });
 

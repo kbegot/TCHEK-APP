@@ -2,21 +2,25 @@
     "message": "Tchek loaded successfully !",
     "data": {
         "tchek": {
-            "id": "PTU7NekvOv",
-            "createdAt": "2023-07-13T10:00:12.278Z",
-            "updatedAt": "2023-07-13T10:01:01.265Z",
+            "id": "TzbcN1f7Js",
+            "createdAt": "2023-07-13T12:22:15.904Z",
+            "updatedAt": "2023-07-13T12:23:11.035Z",
             "type": 4,
             "shootInspectDuration": null,
             "vehiclePtr": {
-                "id": "09DHswyLL5",
-                "createdAt": "2023-07-13T10:00:24.013Z",
-                "updatedAt": "2023-07-13T10:00:58.910Z",
+                "id": "4CkryAzsZm",
+                "createdAt": "2023-07-10T08:58:38.403Z",
+                "updatedAt": "2023-07-13T12:23:07.913Z",
+                "brand": "clio 3",
+                "model": "clio ",
                 "companyPtr": {
                     "id": "H5yaWHbufR"
                 },
-                "immat": "NO_IMMAT"
+                "vin": "987654123",
+                "immat": "AD019HP",
+                "color": "gris"
             },
-            "shortid": "Muog08IO9",
+            "shortid": "4FXeQlO1J",
             "costSettingsPtr": {
                 "id": "sJmKfnVnEJ",
                 "createdAt": "2021-11-26T14:53:45.246Z",
@@ -609,392 +613,25 @@
                 "gpsLocation": "43.3403321,5.3680211"
             },
             "percentParts": "0",
-            "tchekCreatedAt": "2023-07-13T10:00:12.273Z",
+            "tchekCreatedAt": "2023-07-13T12:22:15.901Z",
             "report": {
                 "dateFirstPicture": "2023-07-13",
-                "date": "2023-07-13T10:00:32.444Z",
-                "id": "09DHswyLL5",
-                "createdAt": "2023-07-13T10:00:24.013Z",
-                "updatedAt": "2023-07-13T10:00:24.054Z",
+                "date": "2023-07-13T12:22:29.227Z",
+                "id": "8JmbdIgGdi",
+                "createdAt": "2023-07-13T12:22:24.458Z",
+                "updatedAt": "2023-07-13T12:22:24.485Z",
                 "companyPtr": {
                     "id": "H5yaWHbufR"
                 },
                 "immat": "NO_IMMAT",
-                "clientLastName": "BEGOT",
-                "clientFirstName": "Kévin",
-                "clientMail": "kevkev",
+                "clientLastName": "begot",
+                "clientFirstName": "kevin",
+                "clientMail": "aazf",
                 "clientPhone": "0605040302",
-                "notes": "zhhzz"
+                "personInCharge": "aeaz",
+                "notes": "eaeaea"
             },
-            "numberDamage": 0,
-            "picturesSelected": {},
-            "camConfig": {},
-            "thumbnailImagePtr": {
-                "id": "030F4pRYFZ"
-            },
-            "detectionFinished": true,
-            "detectionFinishedAt": "2023-07-13T10:00:28.636Z",
-            "detectionStartedAt": "2023-07-13T10:00:18.895Z",
-            "detectionStatus": false
-        },
-        "damages": [],
-        "images": [
-            {
-                "url": "https://tchekprod.s3.eu-west-3.amazonaws.com/SSBPXJEddR/PTU7NekvOv/frontT34DriverInspect.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ4WTBMXTH5K6FZFA%2F20230713%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230713T100101Z&X-Amz-Expires=7200&X-Amz-Signature=937183e9ce422d0f50169be2d0f353fe326b8555369eda59c3c8387c81087296&X-Amz-SignedHeaders=host",
-                "id": "MCHOBIBsyN",
-                "createdAt": "2023-07-13T10:00:16.671Z",
-                "updatedAt": "2023-07-13T10:00:27.341Z",
-                "typeImage": 0,
-                "tchekPtr": {
-                    "objectId": "PTU7NekvOv"
-                },
-                "size": {
-                    "height": 1080,
-                    "width": 1920
-                },
-                "metadata": {
-                    "angle": 3
-                },
-                "name": "frontT34DriverInspect.jpeg"
-            },
-            {
-                "url": "https://tchekprod.s3.eu-west-3.amazonaws.com/SSBPXJEddR/PTU7NekvOv/sideDriver.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ4WTBMXTH5K6FZFA%2F20230713%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230713T100101Z&X-Amz-Expires=7200&X-Amz-Signature=057ed0e668e04e6e983581b54b9d1e9cb1a2ec00f86e3b4e7f9abfdedf67aeb7&X-Amz-SignedHeaders=host",
-                "id": "1ltRc33ECB",
-                "createdAt": "2023-07-13T10:00:16.671Z",
-                "updatedAt": "2023-07-13T10:00:27.341Z",
-                "typeImage": 0,
-                "tchekPtr": {
-                    "objectId": "PTU7NekvOv"
-                },
-                "size": {
-                    "height": 1080,
-                    "width": 1920
-                },
-                "metadata": {
-                    "angle": 4
-                },
-                "name": "sideDriver.jpeg"
-            },
-            {
-                "url": "https://tchekprod.s3.eu-west-3.amazonaws.com/SSBPXJEddR/PTU7NekvOv/frontT34Driver.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ4WTBMXTH5K6FZFA%2F20230713%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230713T100101Z&X-Amz-Expires=7200&X-Amz-Signature=6836714697aceff72d053b345c4cff068631ce15e3ebcb49448b9d3e26dacf02&X-Amz-SignedHeaders=host",
-                "id": "030F4pRYFZ",
-                "createdAt": "2023-07-13T10:00:16.671Z",
-                "updatedAt": "2023-07-13T10:00:27.341Z",
-                "typeImage": 0,
-                "tchekPtr": {
-                    "objectId": "PTU7NekvOv"
-                },
-                "size": {
-                    "height": 1080,
-                    "width": 1920
-                },
-                "metadata": {
-                    "angle": 2
-                },
-                "name": "frontT34Driver.jpeg"
-            },
-            {
-                "url": "https://tchekprod.s3.eu-west-3.amazonaws.com/SSBPXJEddR/PTU7NekvOv/front.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ4WTBMXTH5K6FZFA%2F20230713%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230713T100101Z&X-Amz-Expires=7200&X-Amz-Signature=d5a3ea001a4f1b537dc21857f9e615ca3f24abf9628acd299dc069a2dcb678a2&X-Amz-SignedHeaders=host",
-                "id": "8Q0s1urr87",
-                "createdAt": "2023-07-13T10:00:16.671Z",
-                "updatedAt": "2023-07-13T10:00:27.341Z",
-                "typeImage": 0,
-                "tchekPtr": {
-                    "objectId": "PTU7NekvOv"
-                },
-                "size": {
-                    "height": 1080,
-                    "width": 1920
-                },
-                "metadata": {
-                    "angle": 0
-                },
-                "name": "front.jpeg"
-            },
-            {
-                "url": "https://tchekprod.s3.eu-west-3.amazonaws.com/SSBPXJEddR/PTU7NekvOv/back.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ4WTBMXTH5K6FZFA%2F20230713%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230713T100101Z&X-Amz-Expires=7200&X-Amz-Signature=e65c2acc1b7727ff2d6668b274a1048bfa4ea3009b83e3ff7237379bc906baf1&X-Amz-SignedHeaders=host",
-                "id": "W7ZeHwxoFR",
-                "createdAt": "2023-07-13T10:00:16.671Z",
-                "updatedAt": "2023-07-13T10:00:27.341Z",
-                "typeImage": 0,
-                "tchekPtr": {
-                    "objectId": "PTU7NekvOv"
-                },
-                "size": {
-                    "height": 1080,
-                    "width": 1920
-                },
-                "metadata": {
-                    "angle": 9
-                },
-                "name": "back.jpeg"
-            },
-            {
-                "url": "https://tchekprod.s3.eu-west-3.amazonaws.com/SSBPXJEddR/PTU7NekvOv/backT34DriverInspect.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ4WTBMXTH5K6FZFA%2F20230713%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230713T100101Z&X-Amz-Expires=7200&X-Amz-Signature=6710da26341eac34183029d84d5f936f18be0307e39ce2147705266ea25bd4a8&X-Amz-SignedHeaders=host",
-                "id": "izn1EQg4hS",
-                "createdAt": "2023-07-13T10:00:16.671Z",
-                "updatedAt": "2023-07-13T10:00:27.341Z",
-                "typeImage": 0,
-                "tchekPtr": {
-                    "objectId": "PTU7NekvOv"
-                },
-                "size": {
-                    "height": 1080,
-                    "width": 1920
-                },
-                "metadata": {
-                    "angle": 8
-                },
-                "name": "backT34DriverInspect.jpeg"
-            },
-            {
-                "url": "https://tchekprod.s3.eu-west-3.amazonaws.com/SSBPXJEddR/PTU7NekvOv/sideDriverFrontInspect.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ4WTBMXTH5K6FZFA%2F20230713%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230713T100101Z&X-Amz-Expires=7200&X-Amz-Signature=18938da6d5bff99647a7139941fe716a218aa4dcf4f06db46e3873c6380ada93&X-Amz-SignedHeaders=host",
-                "id": "Fznv7iPUlz",
-                "createdAt": "2023-07-13T10:00:16.671Z",
-                "updatedAt": "2023-07-13T10:00:27.341Z",
-                "typeImage": 0,
-                "tchekPtr": {
-                    "objectId": "PTU7NekvOv"
-                },
-                "size": {
-                    "height": 1080,
-                    "width": 1920
-                },
-                "metadata": {
-                    "angle": 5
-                },
-                "name": "sideDriverFrontInspect.jpeg"
-            },
-            {
-                "url": "https://tchekprod.s3.eu-west-3.amazonaws.com/SSBPXJEddR/PTU7NekvOv/backT34Driver.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ4WTBMXTH5K6FZFA%2F20230713%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230713T100101Z&X-Amz-Expires=7200&X-Amz-Signature=e84c0addd7b599255be1baf4242ce41b75cca1bf9e0e6da5ff1280b3350b0240&X-Amz-SignedHeaders=host",
-                "id": "tXGMnqFwXL",
-                "createdAt": "2023-07-13T10:00:16.671Z",
-                "updatedAt": "2023-07-13T10:00:27.341Z",
-                "typeImage": 0,
-                "tchekPtr": {
-                    "objectId": "PTU7NekvOv"
-                },
-                "size": {
-                    "height": 1080,
-                    "width": 1920
-                },
-                "metadata": {
-                    "angle": 7
-                },
-                "name": "backT34Driver.jpeg"
-            },
-            {
-                "url": "https://tchekprod.s3.eu-west-3.amazonaws.com/SSBPXJEddR/PTU7NekvOv/sideDriverBackInspect.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ4WTBMXTH5K6FZFA%2F20230713%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230713T100101Z&X-Amz-Expires=7200&X-Amz-Signature=72cf2ed9bf4888ea76bb534a931b973d5bd93bff37ae3c6f142a4b05f524e4b7&X-Amz-SignedHeaders=host",
-                "id": "paCSNHgwtq",
-                "createdAt": "2023-07-13T10:00:16.671Z",
-                "updatedAt": "2023-07-13T10:00:27.341Z",
-                "typeImage": 0,
-                "tchekPtr": {
-                    "objectId": "PTU7NekvOv"
-                },
-                "size": {
-                    "height": 1080,
-                    "width": 1920
-                },
-                "metadata": {
-                    "angle": 6
-                },
-                "name": "sideDriverBackInspect.jpeg"
-            },
-            {
-                "url": "https://tchekprod.s3.eu-west-3.amazonaws.com/SSBPXJEddR/PTU7NekvOv/sidePassengerFrontInspect.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ4WTBMXTH5K6FZFA%2F20230713%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230713T100101Z&X-Amz-Expires=7200&X-Amz-Signature=a33d24148f072c83437363a4d6a37c240990045b407ad7cdb89cbb55975d2b58&X-Amz-SignedHeaders=host",
-                "id": "r6HQsktRsg",
-                "createdAt": "2023-07-13T10:00:16.672Z",
-                "updatedAt": "2023-07-13T10:00:27.341Z",
-                "typeImage": 0,
-                "tchekPtr": {
-                    "objectId": "PTU7NekvOv"
-                },
-                "size": {
-                    "height": 1080,
-                    "width": 1920
-                },
-                "metadata": {
-                    "angle": 15
-                },
-                "name": "sidePassengerFrontInspect.jpeg"
-            },
-            {
-                "url": "https://tchekprod.s3.eu-west-3.amazonaws.com/SSBPXJEddR/PTU7NekvOv/backT34Passenger.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ4WTBMXTH5K6FZFA%2F20230713%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230713T100101Z&X-Amz-Expires=7200&X-Amz-Signature=638e8eab48340322ca5bf37095020e0d02ca5963dbd1e76f642d9bb0fca264a7&X-Amz-SignedHeaders=host",
-                "id": "pDYKFAe3kh",
-                "createdAt": "2023-07-13T10:00:16.671Z",
-                "updatedAt": "2023-07-13T10:00:27.341Z",
-                "typeImage": 0,
-                "tchekPtr": {
-                    "objectId": "PTU7NekvOv"
-                },
-                "size": {
-                    "height": 1080,
-                    "width": 1920
-                },
-                "metadata": {
-                    "angle": 11
-                },
-                "name": "backT34Passenger.jpeg"
-            },
-            {
-                "url": "https://tchekprod.s3.eu-west-3.amazonaws.com/SSBPXJEddR/PTU7NekvOv/sidePassengerBackInspect.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ4WTBMXTH5K6FZFA%2F20230713%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230713T100101Z&X-Amz-Expires=7200&X-Amz-Signature=a1554f91db4fd0629f03bc70804f4b36da488ada0bf41248767aaadd3b68e3ce&X-Amz-SignedHeaders=host",
-                "id": "G2H3BNhV8q",
-                "createdAt": "2023-07-13T10:00:16.671Z",
-                "updatedAt": "2023-07-13T10:00:27.341Z",
-                "typeImage": 0,
-                "tchekPtr": {
-                    "objectId": "PTU7NekvOv"
-                },
-                "size": {
-                    "height": 1080,
-                    "width": 1920
-                },
-                "metadata": {
-                    "angle": 14
-                },
-                "name": "sidePassengerBackInspect.jpeg"
-            },
-            {
-                "url": "https://tchekprod.s3.eu-west-3.amazonaws.com/SSBPXJEddR/PTU7NekvOv/backT34PassengerInspect.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ4WTBMXTH5K6FZFA%2F20230713%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230713T100101Z&X-Amz-Expires=7200&X-Amz-Signature=f31b0a25e591a4b24b554535e72b68602c4a73567a00dfa2276c4b61f74bce50&X-Amz-SignedHeaders=host",
-                "id": "PMOMz39nbt",
-                "createdAt": "2023-07-13T10:00:16.671Z",
-                "updatedAt": "2023-07-13T10:00:27.341Z",
-                "typeImage": 0,
-                "tchekPtr": {
-                    "objectId": "PTU7NekvOv"
-                },
-                "size": {
-                    "height": 1080,
-                    "width": 1920
-                },
-                "metadata": {
-                    "angle": 12
-                },
-                "name": "backT34PassengerInspect.jpeg"
-            },
-            {
-                "url": "https://tchekprod.s3.eu-west-3.amazonaws.com/SSBPXJEddR/PTU7NekvOv/sidePassenger.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ4WTBMXTH5K6FZFA%2F20230713%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230713T100101Z&X-Amz-Expires=7200&X-Amz-Signature=e47259999f9edab2e76c198da8d2984d5f560739ce2712d2844bf56b23c27c38&X-Amz-SignedHeaders=host",
-                "id": "4rZzKWm98r",
-                "createdAt": "2023-07-13T10:00:16.671Z",
-                "updatedAt": "2023-07-13T10:00:27.341Z",
-                "typeImage": 0,
-                "tchekPtr": {
-                    "objectId": "PTU7NekvOv"
-                },
-                "size": {
-                    "height": 1080,
-                    "width": 1920
-                },
-                "metadata": {
-                    "angle": 13
-                },
-                "name": "sidePassenger.jpeg"
-            },
-            {
-                "url": "https://tchekprod.s3.eu-west-3.amazonaws.com/SSBPXJEddR/PTU7NekvOv/frontT34Passenger.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ4WTBMXTH5K6FZFA%2F20230713%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230713T100101Z&X-Amz-Expires=7200&X-Amz-Signature=2752646ec3734424d9f425063c59d445d735f217dbd6b1c99afd7c5a789950ea&X-Amz-SignedHeaders=host",
-                "id": "cItdEhrxpQ",
-                "createdAt": "2023-07-13T10:00:16.672Z",
-                "updatedAt": "2023-07-13T10:00:27.341Z",
-                "typeImage": 0,
-                "tchekPtr": {
-                    "objectId": "PTU7NekvOv"
-                },
-                "size": {
-                    "height": 1080,
-                    "width": 1920
-                },
-                "metadata": {
-                    "angle": 16
-                },
-                "name": "frontT34Passenger.jpeg"
-            },
-            {
-                "url": "https://tchekprod.s3.eu-west-3.amazonaws.com/SSBPXJEddR/PTU7NekvOv/frontT34PassengerInspect.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ4WTBMXTH5K6FZFA%2F20230713%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20230713T100101Z&X-Amz-Expires=7200&X-Amz-Signature=91ad0ad16159a615155b9f53c52da99aed864d9550d1bcd069b02b57cd9dfbd6&X-Amz-SignedHeaders=host",
-                "id": "nL0mIT9OzA",
-                "createdAt": "2023-07-13T10:00:16.672Z",
-                "updatedAt": "2023-07-13T10:00:27.341Z",
-                "typeImage": 0,
-                "tchekPtr": {
-                    "objectId": "PTU7NekvOv"
-                },
-                "size": {
-                    "height": 1080,
-                    "width": 1920
-                },
-                "metadata": {
-                    "angle": 17
-                },
-                "name": "frontT34PassengerInspect.jpeg"
-            }
-        ],
-        "company": {
-            "id": "H5yaWHbufR",
-            "createdAt": "2021-09-02T13:44:55.415Z",
-            "updatedAt": "2022-08-12T09:19:52.791Z",
-            "identifier": "HESS",
-            "costSettingsList": [
-                {
-                    "className": "default",
-                    "id": "sJmKfnVnEJ",
-                    "tax": 20,
-                    "currency": "€"
-                }
-            ],
-            "name": "hess",
-            "logo": {
-                "__type": "File",
-                "name": "b7c966be223f9f6425d4609c6bf97e7d_hess.jpg",
-                "url": "https://alto.tchek.fr/parse/files/backAlto/b7c966be223f9f6425d4609c6bf97e7d_hess.jpg"
-            },
-            "settingsPtr": {
-                "id": "cNVk65TMNP",
-                "createdAt": "2021-05-31T15:23:07.304Z",
-                "updatedAt": "2021-09-14T12:08:37.005Z",
-                "style": {
-                    "damageColor": "#20c209",
-                    "newDamageColor": "#FF0000",
-                    "dashboard": [
-                        {
-                            "display": "Photo",
-                            "value": "picture"
-                        },
-                        {
-                            "display": "Immatriculation",
-                            "value": "matriculation"
-                        },
-                        {
-                            "display": "Date",
-                            "value": "date"
-                        },
-                        {
-                            "display": "Nombre nouveaux de Dommages",
-                            "value": "newDamage"
-                        },
-                        {
-                            "display": "Statut",
-                            "value": "status"
-                        }
-                    ],
-                    "gamma": 1,
-                    "contrast": 0,
-                    "saturation": 0
-                },
-                "accessibility": {
-                    "showIcons": false,
-                    "useFastTrack": true,
-                    "fastTrackComp": true,
-                    "showImmatPicture": true,
-                    "fastTrackZoom": true,
-                    "fastTrackL1": true,
-                    "fastTrackL2": true,
-                    "fastTrackL3": true
-                }
-            },
-            "iamPtr": {
-                "objectId": "r24xGx6RH9"
-            }
-        },
-        "apiTokenId": "SSBPXJEddR"
+        }
     }
 }
+ 
