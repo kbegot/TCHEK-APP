@@ -30,23 +30,26 @@ const rapportSrc = ref('');
 const vehiculeStore = useVehicleStore();
 
 onMounted(async () => {
-   console.log('onMounted: '+vehiculeStore.token);
+   console.log('onMounted: '+vehiculeStore.token); //TODO
 
+   if (vehiculeStore.token !== null){
+       setTchekData();
+   }
 });
 
-if (vehiculeStore.token !== null){
-    isTchekToken.value = true;
-}
+const setTchekData = () => {
+  isTchekToken.value = true;
+  iframeSrc.value = `https://webapp.tchek.fr/fr/pwa/sso/intro-shoot-inspect?token=${vehiculeStore.token}`;
+  rapportSrc.value = `https://webapp.tchek.fr/fr/report?token=${vehiculeStore.token}`;
+};
 
-isTchekToken.value = true;
 const tchekToken = async () => {
     await useVehicleStore().getTchekToken();
+    setTchekData();
 
     console.log('storeToken: '+vehiculeStore.token); //TODO 
-    
-    iframeSrc.value = `https://webapp.tchek.fr/fr/pwa/sso/intro-shoot-inspect?token=${vehiculeStore.token}`;
-    rapportSrc.value = `https://webapp.tchek.fr/fr/report?token=${vehiculeStore.token}`;
 }
+
 const tchekValid = async () => {
     useVehicleStore().getTchekReport();
     isTchekValid.value = true;
