@@ -1,6 +1,8 @@
 <template>
     <div class="">
-      <p>ici le Rapport</p>
+      <p>test</p>
+      <p>Type: </p>
+      <p>Severity: </p>
     </div>
   </template>
   
