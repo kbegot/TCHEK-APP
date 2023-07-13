@@ -5,13 +5,12 @@
             <button class="flex p-3 text-white bg-green-600 rounded-md" :class="[!isTchekToken ? 'block' : 'hidden']"
                 @click="tchekToken">Créer une reprise Tchek</button>
         </div>
-        <ul> {{ vehiculeStore.clientLastName }}
-        </ul>
+        <p>{{ vehiculeStore.clientLastName }} </p> 
         <iframe class="w-full h-[850px]" :class="[(isTchekToken && !isTchekValid) ? 'block' : 'hidden']" id="iframe" :src="iframeSrc"
             allow="camera *;microphone *"></iframe>
     </div>
     <div class="flex justify-center pt-2 bg-white">
-        <button class="p-3 text-white bg-green-600 rounded-md" :class="[!isTchekValid ? 'block' : 'hidden']"
+        <button class="p-3 text-white bg-green-600 rounded-md" :class="[(!isTchekValid && isTchekToken) ? 'block' : 'hidden']"
             @click="tchekValid">Valider la Reprise Tchek</button>
         <a class="p-3 text-white bg-green-600 rounded-md" :class="[isTchekValid ? 'block' : 'hidden']"
             :href="rapportSrc">Cliquez pour voir le rapport</a>
@@ -51,11 +50,9 @@ const tchekToken = async () => {
 }
 
 const tchekValid = async () => {
-    await useVehicleStore().getTchekReport();
     isTchekValid.value = true;
-    console.log('valid '+isTchekValid.value);
-    console.log('token '+isTchekToken.value);
-
+    await useVehicleStore().getTchekReport();
+    console.log('storeNAME: '+ vehiculeStore.clientLastName);
 };
 
 </script>
