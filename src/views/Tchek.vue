@@ -1,7 +1,6 @@
 <template>
     <div>
-        <div class="flex items-center justify-center gap-2">
-            <h1 class="text-center bold">IFrame Tchek Testing</h1>
+        <div class="flex justify-center pt-1">
             <button class="flex p-3 text-white bg-green-600 rounded-md" :class="[!isTchekToken ? 'block' : 'hidden']"
                 @click="tchekToken">Créer une reprise Tchek</button>
         </div>
