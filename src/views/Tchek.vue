@@ -7,7 +7,7 @@
         </div>
         <ul> {{ vehiculeStore.clientLastName }}
         </ul>
-        <iframe class="w-full h-[850px]" :class="[(isTchekToken || isTchekValid)? 'block' : 'hidden']" id="iframe" :src="iframeSrc"
+        <iframe class="w-full h-[850px]" :class="[(isTchekToken && !isTchekValid) ? 'block' : 'hidden']" id="iframe" :src="iframeSrc"
             allow="camera *;microphone *"></iframe>
     </div>
     <div class="flex justify-center pt-2 bg-white">
@@ -51,8 +51,11 @@ const tchekToken = async () => {
 }
 
 const tchekValid = async () => {
-    useVehicleStore().getTchekReport();
+    await useVehicleStore().getTchekReport();
     isTchekValid.value = true;
+    console.log('valid '+isTchekValid.value);
+    console.log('token '+isTchekToken.value);
+
 };
 
 </script>
