@@ -4,11 +4,15 @@ import axios from 'axios';
 interface State {
   token: string | null;
   clientLastName: string | null;
+  type: string | null;
+  severity: string | null;
 }
 
 const initialState = {
   token: null,
-  clientLastName: null
+  clientLastName: null,
+  type: null,
+  severity: null
 }
 
 export const useVehicleStore = defineStore({
@@ -44,6 +48,8 @@ export const useVehicleStore = defineStore({
           },
         }).then((response) => {
           console.log(response.data.data.damages);
+          console.log('lastname: '+this.clientLastName);
+          this.clientLastName == response.data.data.tchek.report.clientLastName
           
         });
     }
