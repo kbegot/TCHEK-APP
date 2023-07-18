@@ -4,6 +4,7 @@ import axios from 'axios';
 interface State {
   token: string | null;
   clientLastName: string | null;
+  immat: string | null;
   damage: Damage[] | null ;
 }
 interface Damage {
@@ -16,6 +17,7 @@ interface Damage {
 const initialState = {
   token: null,
   clientLastName: null,
+  immat: null,
   damage: [],
 }
 

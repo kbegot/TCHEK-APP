@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Liste des dommages: </p>
+    <p>Liste des dommages du véhicule {{vehiculeStore.immat}}: </p>
     <br>
     <div v-for="(damage, index) in vehiculeStore.damage" :key="index">
       <p>Id: {{ damage.id }}</p>
