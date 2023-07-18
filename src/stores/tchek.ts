@@ -4,15 +4,13 @@ import axios from 'axios';
 interface State {
   token: string | null;
   clientLastName: string | null;
-  type: string | null;
-  severity: string | null;
-}
+  damage: string[] | null ;
+  }
 
 const initialState = {
   token: null,
   clientLastName: null,
-  type: null,
-  severity: null
+  damage: []
 }
 
 export const useVehicleStore = defineStore({
@@ -39,19 +37,23 @@ export const useVehicleStore = defineStore({
 
     async getTchekReport() {
       await axios.get('https://alto.tchek.fr/apiV1/report/loadtchek', {
-          params: {
-            token: 'TEB8B11'
-          },
-          headers: {
-            'X-API-Key': import.meta.env.VITE_API_KEY,
-            'Content-Type': 'application/json',
-          },
-        }).then((response) => {
-          console.log(response.data.data.damages);    
-          this.clientLastName = response.data.data.tchek.report.clientLastName;
-          console.log('LastName: '+this.clientLastName);     
-        });
+        params: {
+          token: 'TEB8B11'
+        },
+        headers: {
+          'X-API-Key': import.meta.env.VITE_API_KEY,
+          'Content-Type': 'application/json',
+        },
+      }).then((response) => {
+        console.log(response.data.data.damages);
+        this.clientLastName = response.data.data.tchek.report.clientLastName;
+        this.damage = response.data.data.damages.map((damage: object) => damage);
+    
+        console.log('LastName: ' + this.clientLastName);
+        console.log('Damage1: ', this.damage);
+      });
     }
+    
   }  
 });
 
