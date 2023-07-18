@@ -4,13 +4,17 @@ import axios from 'axios';
 interface State {
   token: string | null;
   clientLastName: string | null;
-  damage: string[] | null ;
-  }
+  damage: Damage[] | null ;
+}
+interface Damage {
+  id: string;
+  isAuto: boolean;
+}
 
 const initialState = {
   token: null,
   clientLastName: null,
-  damage: []
+  damage: [],
 }
 
 export const useVehicleStore = defineStore({
@@ -45,12 +49,8 @@ export const useVehicleStore = defineStore({
           'Content-Type': 'application/json',
         },
       }).then((response) => {
-        console.log(response.data.data.damages);
         this.clientLastName = response.data.data.tchek.report.clientLastName;
         this.damage = response.data.data.damages.map((damage: object) => damage);
-    
-        console.log('LastName: ' + this.clientLastName);
-        console.log('Damage1: ', this.damage);
       });
     }
     

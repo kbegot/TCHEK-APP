@@ -16,10 +16,10 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import { useVehicleStore } from '@/stores/tchek';
-import axios from 'axios';
+
 
 const isTchekValid = ref(false);
 const isTchekToken = ref(false);
