@@ -73,7 +73,7 @@ interface StateFilter {
   }
   
   export const uselocationFilter = defineStore({
-    id: 'Tchek',
+    id: 'Filter',
     state: (): StateFilter => {
       return JSON.parse(JSON.stringify(initialStateFilter));
     },

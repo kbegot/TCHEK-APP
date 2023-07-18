@@ -19,12 +19,8 @@ import { uselocationFilter } from '@/stores/filter';
 const vehiculeStore = useVehicleStore();
 const locationFilter = uselocationFilter();
 
-const getLocationName = (locationCode: string): string => {
-  if (locationFilter.data === null) {
-    return '';
-  }
-
-  const foundLocation = locationFilter.data.find(location => location.code === locationCode);
-  return foundLocation ? foundLocation.name : '';
+const getLocationName = (locationCode: string) => {
+  const matchingLocation = locationFilter.data?.find(location => location.code === locationCode);
+  return matchingLocation ? matchingLocation.name : 'Emplacement inconnu';
 };
 </script>
