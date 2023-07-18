@@ -14,10 +14,10 @@
 
 <script setup lang="ts">
 import { useVehicleStore } from '@/stores/tchek';
-import { uselocationFilter } from '@/stores/filter';
+import { useLocationFilter } from '@/stores/filter';
 
 const vehiculeStore = useVehicleStore();
-const locationFilter = uselocationFilter();
+const locationFilter = useLocationFilter();
 
 const getLocationName = (locationCode: string) => {
   const matchingLocation = locationFilter.data?.find(location => location.code === locationCode);

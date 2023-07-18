@@ -1,16 +1,14 @@
 import { defineStore } from 'pinia'
-interface StateFilter {
+interface StateLocationFilter {
     data: Location[] | null
   }
-  
   interface Location {
     id: string;
     code: string;
     name: string;
-   
   }
   
-  const initialStateFilter = {
+  const initialStateLocationFilter = {
     data: [
       { id: "01", code:"AILAVG", name: "AILE AVANT GAUCHE" },
       { id: "02", code:"ROUAVG", name: "ROUE AVANT GAUCHE" },
@@ -72,10 +70,38 @@ interface StateFilter {
     ],
   }
   
-  export const uselocationFilter = defineStore({
-    id: 'Filter',
-    state: (): StateFilter => {
-      return JSON.parse(JSON.stringify(initialStateFilter));
+  export const useLocationFilter = defineStore({
+    id: 'locationFilter',
+    state: (): StateLocationFilter => {
+      return JSON.parse(JSON.stringify(initialStateLocationFilter));
     },
   })
+
   
+
+interface StateSeverityFilter {
+    data: Severity[] | null,
+}
+interface Severity{
+    key: string;
+    name: string;
+    color: string
+}
+
+const initialStateSeverityFilter = {
+    data: [
+        {hey: "SEV0", name:"Inconnue", color:"Pink"},
+        {hey: "SEV1", name:"Frottement ou léger défaut d'aspect", color:"Yellow"},
+        {hey: "SEV2", name:"Réparation rapide", color:"Light blue"},
+        {hey: "SEV2", name:"Peinture", color:"Blue"},
+        {hey: "SEV4", name:"Tolerie peinture", color:"Red"},
+        {hey: "SEV5", name:"Remplacement", color:"Black"}
+    ]
+}
+
+  export const useSeverityFilter = defineStore({
+    id: 'severityFilter',
+    state: (): StateSeverityFilter => {
+      return JSON.parse(JSON.stringify(initialStateSeverityFilter));
+    },
+  })
