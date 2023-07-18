@@ -9,6 +9,8 @@ interface State {
 interface Damage {
   id: string;
   isAuto: boolean;
+  location: string;
+  severity: string;
 }
 
 const initialState = {
