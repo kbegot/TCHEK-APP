@@ -90,12 +90,12 @@ interface Severity{
 
 const initialStateSeverityFilter = {
     data: [
-        {hey: "SEV0", name:"Inconnue", color:"Pink"},
-        {hey: "SEV1", name:"Frottement ou léger défaut d'aspect", color:"Yellow"},
-        {hey: "SEV2", name:"Réparation rapide", color:"Light blue"},
-        {hey: "SEV2", name:"Peinture", color:"Blue"},
-        {hey: "SEV4", name:"Tolerie peinture", color:"Red"},
-        {hey: "SEV5", name:"Remplacement", color:"Black"}
+        {key: "SEV0", name:"Inconnue", color:"Pink"},
+        {key: "SEV1", name:"Frottement ou léger défaut d'aspect", color:"Yellow"},
+        {key: "SEV2", name:"Réparation rapide", color:"Light blue"},
+        {key: "SEV3", name:"Peinture", color:"Blue"},
+        {key: "SEV4", name:"Tolerie peinture", color:"Red"},
+        {key: "SEV5", name:"Remplacement", color:"Black"}
     ]
 }
 
