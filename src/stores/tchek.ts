@@ -12,6 +12,7 @@ interface Damage {
   isAuto: boolean;
   location: string;
   severity: string;
+  type: string;
 }
 
 const initialState = {

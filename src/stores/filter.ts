@@ -105,6 +105,7 @@ const initialStateSeverityFilter = {
       return JSON.parse(JSON.stringify(initialStateSeverityFilter));
     },
   })
+  
 
   interface StateTypeFilter{
     data: Type[] | null;
@@ -152,9 +153,6 @@ const initialStateSeverityFilter = {
         {key: "friction_scratch", name: "Frottement"}
     ]
   }
-
-
-
 
   export const useTypeFilter = defineStore({
     id: 'typeFilter',

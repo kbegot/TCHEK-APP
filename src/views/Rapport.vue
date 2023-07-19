@@ -7,7 +7,7 @@
       <p>Détéction automatique: {{ damage.isAuto }}</p>
       <p>Localisation: {{ getLocationName(damage.location)+ ' (' + damage.location+')' }}</p>
       <p>Severity: {{ getSeverityName(damage.severity)+' (' + damage.severity+')' }}</p>
-      <p>Type: </p>
+      <p>Type: {{ getTypeName(damage.type)+' (' + damage.type+')'  }}</p>
       <br>
     </div>
   </div>
@@ -15,12 +15,12 @@
 
 <script setup lang="ts">
 import { useVehicleStore } from '@/stores/tchek';
-import { useLocationFilter } from '@/stores/filter';
-import { useSeverityFilter } from '@/stores/filter';
+import { useLocationFilter, useTypeFilter,  useSeverityFilter} from '@/stores/filter';
 
 const vehiculeStore = useVehicleStore();
 const locationFilter = useLocationFilter();
 const severityFilter = useSeverityFilter();
+const typeFilter = useTypeFilter();
 
 const getLocationName = (locationCode: string) => {
   const matchingLocation = locationFilter.data?.find(location => location.code === locationCode);
@@ -30,5 +30,10 @@ const getLocationName = (locationCode: string) => {
 const getSeverityName = (severityKey: string) => {
   const mactchingSeverity = severityFilter.data?.find(severity => severity.key === severityKey);
   return mactchingSeverity ? mactchingSeverity.name : 'Inconnu';
+}
+
+const getTypeName = (typeKey: string) => {
+  const matchingType  = typeFilter.data?.find(type => type.key === typeKey);
+  return matchingType ? matchingType.name : 'Inconnu';
 }
 </script>
