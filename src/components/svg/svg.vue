@@ -1,15 +1,20 @@
 <template>
-  <div>
-    <p>Liste des dommages du véhicule {{vehiculeStore.immat}}: </p>
-    <br>
-    <Card></Card>
-  </div>
+    <div v-for="(damage, iamges, index) in vehiculeStore.damage" :key="index" class="flex">
+        <div>
+          <p>Id: {{ damage.id }}</p>
+          <p>Détection automatique: {{ damage.isAuto }}</p>
+          <p>Localisation: {{ getLocationName(damage.location)}} ({{ damage.location }})</p>
+          <p>Severity: {{ getSeverityName(damage.severity )}} ({{ damage.severity }})</p>
+          <p>Type: {{ getTypeName(damage.type)}} ({{ damage.type }})</p>
+          <p>Svg Location:  {{ damage.svgLocation }}</p>
+          <p>Images: ({{ damage.roiPtr.imagePtr.id }})</p>
+          <img :src="getImageUrl(damage.roiPtr.imagePtr.id)" alt="" class="w-[200px]">
+        </div>
+    </div>
 </template>
-
 <script setup lang="ts">
-import Card from '@/components/svg/svg.vue'
-import { useVehicleStore } from '@/stores/tchek';
-import { useLocationFilter, useTypeFilter,  useSeverityFilter} from '@/stores/filter';
+import { useVehicleStore } from '../../stores/tchek';
+import { useLocationFilter, useTypeFilter,  useSeverityFilter} from '../../stores/filter';
 
 const vehiculeStore = useVehicleStore();
 const locationFilter = useLocationFilter();
