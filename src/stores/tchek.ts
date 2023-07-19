@@ -6,7 +6,11 @@ interface State {
   clientLastName: string | null;
   immat: string | null;
   damage: Damage[] | null ;
-  images: string | null;
+  images: Image | null;
+}
+interface Image {
+  id: string;
+  url: string;
 }
 interface Damage {
   id: string;
@@ -27,7 +31,7 @@ const initialState = {
   token: null,
   clientLastName: null,
   immat: null,
-  damage: [],
+  damage: null,
   images: null,
 }
 
