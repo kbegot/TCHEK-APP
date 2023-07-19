@@ -105,3 +105,60 @@ const initialStateSeverityFilter = {
       return JSON.parse(JSON.stringify(initialStateSeverityFilter));
     },
   })
+
+  interface StateTypeFilter{
+    data: Type[] | null;
+  }
+  interface Type {
+    key: string;
+    name: string;
+  }
+
+  const initialStateTypeFilter = {
+    data: [
+        {key: "bump", name: "Bosse"},
+        {key: "scratch", name: "Rayure"},
+        {key: "dent", name: "Enfoncement"},
+        {key: "ecl", name: "Éclat"},
+        {key: "imp", name: "Impact profond"},
+        {key: "fis", name: "Fissure"},
+        {key: "bri", name: "Bris de glace"},
+        {key: "col", name: "Collision"},
+        {key: "def", name: "Déformation"},
+        {key: "gri", name: "Griffes"},
+        {key: "manq", name: "Pièce manquante"},
+        {key: "broken_part", name: "Pièce cassée"},
+        {key: "multiple_impact", name: "Impact multiple"},
+        {key: "broken_light", name: "Phare cassé"},
+        {key: "opaque_light", name: "Phare opaque"},
+        {key: "dislocated_part", name: "Piece déboitée"},
+        {key: "missing_light", name: "Phare manquant"},
+        {key: "missing_hubcap", name: "Enjoliveur manquant"},
+        {key: "missing_turn_signal", name: "Clignotant manquant"},
+        {key: "missing_bumper", name: "Pare-choc manquant"},
+        {key: "missing_fuel_door", name: "Trappe manquante"},
+        {key: "missing_side_molding", name: "Baguette de porte manquante"},
+        {key: "missing_handle", name: "Poignée manquante"},
+        {key: "missing_mirror", name: "Rétroviseur manquant"},
+        {key: "missing_mirror_cover", name: "Coque manquante"},
+        {key: "missing_mirror_glass", name: "Glace manquante"},
+        {key: "missing_numberplate", name: "Plaque d'immatriculation manquante"},
+        {key: "missing_badge", name: "Insigne manquant"},
+        {key: "missing_bumper_molding", name: "Bandeau-pare-choc manquant"},
+        {key: "missing_grill", name: "Calandre manquante"},
+        {key: "paint_chip", name: "Eclat"},
+        {key: "scratched_rim", name: "Jante rayé"},
+        {key: "edge_scratch", name: "Bordure rayée"},
+        {key: "friction_scratch", name: "Frottement"}
+    ]
+  }
+
+
+
+
+  export const useTypeFilter = defineStore({
+    id: 'typeFilter',
+    state: (): StateTypeFilter => {
+      return JSON.parse(JSON.stringify(initialStateTypeFilter));
+    },
+  })
