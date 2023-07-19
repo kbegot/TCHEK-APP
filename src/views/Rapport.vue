@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import Card from '@/components/svg/svg.vue'
+import Card from '@/components/card/card.vue'
 import { useVehicleStore } from '@/stores/tchek';
 import { useLocationFilter, useTypeFilter,  useSeverityFilter} from '@/stores/filter';
 
