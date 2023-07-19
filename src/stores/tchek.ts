@@ -6,6 +6,7 @@ interface State {
   clientLastName: string | null;
   immat: string | null;
   damage: Damage[] | null ;
+  images: string | null;
 }
 interface Damage {
   id: string;
@@ -20,6 +21,7 @@ const initialState = {
   clientLastName: null,
   immat: null,
   damage: [],
+  images: null
 }
 
 export const useVehicleStore = defineStore({
@@ -56,6 +58,7 @@ export const useVehicleStore = defineStore({
       }).then((response) => {
         this.clientLastName = response.data.data.tchek.report.clientLastName;
         this.damage = response.data.data.damages.map((damage: object) => damage);
+        this.images = response.data.data.images.map((images: object) => images)
       });
     }
     
