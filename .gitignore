@@ -34,3 +34,6 @@ temp
 env
 .env
 .env.*
+
+
+test.json

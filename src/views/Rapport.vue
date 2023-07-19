@@ -4,7 +4,7 @@
     <br>
     <div v-for="(damage, iamges, index) in vehiculeStore.damage" :key="index">
       <p>Id: {{ damage.id }}</p>
-      <p>Détéction automatique: {{ damage.isAuto }}</p>
+      <p>Détection automatique: {{ damage.isAuto }}</p>
       <p>Localisation: {{ getLocationName(damage.location)+ ' (' + damage.location+')' }}</p>
       <p>Severity: {{ getSeverityName(damage.severity)+' (' + damage.severity+')' }}</p>
       <p>Type: {{ getTypeName(damage.type)+' (' + damage.type+')'  }}</p>
