@@ -19,6 +19,7 @@ interface Damage {
   severity: string;
   type: string;
   roiPtr: RoiPointer;
+  svgLocation: number;
 }
 interface RoiPointer{
   imagePtr: ImagePointer
@@ -60,7 +61,7 @@ export const useVehicleStore = defineStore({
     async getTchekReport() {
       await axios.get('https://alto.tchek.fr/apiV1/report/loadtchek', {
         params: {
-          token: 'TEB8B11'
+          token: 'TEE3F6A'
         },
         headers: {
           'X-API-Key': import.meta.env.VITE_API_KEY,
