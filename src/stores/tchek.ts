@@ -14,6 +14,13 @@ interface Damage {
   location: string;
   severity: string;
   type: string;
+  roiPtr: RoiPointer;
+}
+interface RoiPointer{
+  imagePtr: ImagePointer
+}
+interface ImagePointer{
+  id: string
 }
 
 const initialState = {
@@ -21,7 +28,7 @@ const initialState = {
   clientLastName: null,
   immat: null,
   damage: [],
-  images: null
+  images: null,
 }
 
 export const useVehicleStore = defineStore({

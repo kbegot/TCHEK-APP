@@ -2,12 +2,13 @@
   <div>
     <p>Liste des dommages du véhicule {{vehiculeStore.immat}}: </p>
     <br>
-    <div v-for="(damage, index) in vehiculeStore.damage" :key="index">
+    <div v-for="(damage, iamges, index) in vehiculeStore.damage" :key="index">
       <p>Id: {{ damage.id }}</p>
       <p>Détéction automatique: {{ damage.isAuto }}</p>
       <p>Localisation: {{ getLocationName(damage.location)+ ' (' + damage.location+')' }}</p>
       <p>Severity: {{ getSeverityName(damage.severity)+' (' + damage.severity+')' }}</p>
       <p>Type: {{ getTypeName(damage.type)+' (' + damage.type+')'  }}</p>
+      <p>Images: {{' (' + damage.roiPtr.imagePtr.id+')' }}</p>
       <br>
     </div>
   </div>
