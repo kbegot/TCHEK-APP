@@ -6,7 +6,7 @@ interface State {
   clientLastName: string | null;
   immat: string | null;
   damage: Damage[] | null ;
-  images: Image | null;
+  images: Image[] | null;
 }
 interface Image {
   id: string;

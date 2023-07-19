@@ -8,7 +8,8 @@
       <p>Localisation: {{ getLocationName(damage.location)+ ' (' + damage.location+')' }}</p>
       <p>Severity: {{ getSeverityName(damage.severity)+' (' + damage.severity+')' }}</p>
       <p>Type: {{ getTypeName(damage.type)+' (' + damage.type+')'  }}</p>
-      <p>Images: {{' (' + damage.roiPtr.imagePtr.id+')' }}</p>
+      <p>Images: {{'(' + damage.roiPtr.imagePtr.id+')' }}</p>
+      <img :src="getImageUrl(damage.roiPtr.imagePtr.id)" alt="">
       <br>
     </div>
   </div>
@@ -36,5 +37,10 @@ const getSeverityName = (severityKey: string) => {
 const getTypeName = (typeKey: string) => {
   const matchingType  = typeFilter.data?.find(type => type.key === typeKey);
   return matchingType ? matchingType.name : 'Inconnu';
+}
+
+const getImageUrl = (imageId: string) => {
+  const matchingImage = vehiculeStore.images?.find(image => image.id === imageId)
+  return matchingImage ? matchingImage.url : 'Inconnu';
 }
 </script>
