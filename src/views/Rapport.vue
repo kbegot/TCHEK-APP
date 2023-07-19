@@ -2,16 +2,21 @@
   <div>
     <p>Liste des dommages du véhicule {{vehiculeStore.immat}}: </p>
     <br>
-    <div v-for="(damage, iamges, index) in vehiculeStore.damage" :key="index">
-      <p>Id: {{ damage.id }}</p>
-      <p>Détection automatique: {{ damage.isAuto }}</p>
-      <p>Localisation: {{ getLocationName(damage.location)}} ({{ damage.location }})</p>
-      <p>Severity: {{ getSeverityName(damage.severity )}} ({{ damage.severity }})</p>
-      <p>Type: {{ getTypeName(damage.type)}} ({{ damage.type }})</p>
-      <p>Svg Location:  {{ damage.svgLocation }}</p>
-      <p>Images: ({{ damage.roiPtr.imagePtr.id }})</p>
-      <img :src="getImageUrl(damage.roiPtr.imagePtr.id)" alt="" class="w-[200px]">
-      <br>
+    <div v-for="(damage, iamges, index) in vehiculeStore.damage" :key="index" class="flex">
+      <div>
+        <p>Id: {{ damage.id }}</p>
+        <p>Détection automatique: {{ damage.isAuto }}</p>
+        <p>Localisation: {{ getLocationName(damage.location)}} ({{ damage.location }})</p>
+        <p>Severity: {{ getSeverityName(damage.severity )}} ({{ damage.severity }})</p>
+        <p>Type: {{ getTypeName(damage.type)}} ({{ damage.type }})</p>
+        <p>Svg Location:  {{ damage.svgLocation }}</p>
+        <p>Images: ({{ damage.roiPtr.imagePtr.id }})</p>
+        <img :src="getImageUrl(damage.roiPtr.imagePtr.id)" alt="" class="w-[200px]">
+      </div>
+      <div>
+        <img src="../assets/test.svg" alt="" class="w-[300px]">
+        <br>
+      </div>
     </div>
   </div>
 </template>
