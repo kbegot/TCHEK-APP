@@ -61,7 +61,8 @@ export const useVehicleStore = defineStore({
     async getTchekReport() {
       await axios.get('https://alto.tchek.fr/apiV1/report/loadtchek', {
         params: {
-          token: 'TEE3F6A'
+          token: 'T8C7C4A' //T8C7C4A roue
+                           //TEE3F6A sans roue
         },
         headers: {
           'X-API-Key': import.meta.env.VITE_API_KEY,
