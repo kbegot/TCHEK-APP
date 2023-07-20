@@ -26,46 +26,46 @@
                     <path id="Path-21" class="st0" d="M128.6,161.7c0.1,3,0.1,5.3,0,7s-0.5,3-1,4h-55c-0.5-2-0.9-3.7-1-5s-0.1-3.3,0-6l3-1l3-6h45      l3,6L128.6,161.7z"/>
                     <path id="Path-22" class="st0" d="M139.6,179.7l-12-3h-54l-13,3c0.6,3.3,1.3,5.3,2,6s2.4,1.4,5,2h67c2.1-1.1,3.4-2.1,4-3      C139.2,183.8,139.5,182.1,139.6,179.7z"/>
                     <path id="Path-23" class="st0" d="M73.6,187.7h52c-1-1.3-2-2.3-3-3s-3-1.7-6-3h-33c-2.7,1.2-4.7,2.2-6,3S75,186.5,73.6,187.7z"/>
-                    <path id="PHRAVD" class="st0" d="M121.9-27.3c3-1.3,5.2-2,6.7-2c1.5,0,3.2,0.7,5,2c0.9,0.6,1.5,1.2,2,2s0.8,1.8,1,3h-6      c-1.5-0.7-2.8-1.3-4-2C125.4-25,123.8-26,121.9-27.3z" />
-                    <path id="PHRAVG" class="st0" d="M78.6-27.3c-3-1.3-5.2-2-6.7-2s-3.2,0.7-5,2c-0.9,0.6-1.5,1.2-2,2s-0.8,1.8-1,3h6      c1.5-0.7,2.8-1.3,4-2S76.6-26,78.6-27.3z" />
-                    <rect id="CPT0" x="113.7" y="-1.2" class="st0" width="8.8" height="2.8" />
-                    <rect id="CPT1" x="95.7" y="-1.2" class="st0" width="8.8" height="2.8" />
-                    <rect id="CPT2" x="77.7" y="-1.2" class="st0" width="8.8" height="2.8" />
+                    <path id="PHRAVD" class="st0" d="M121.9-27.3c3-1.3,5.2-2,6.7-2c1.5,0,3.2,0.7,5,2c0.9,0.6,1.5,1.2,2,2s0.8,1.8,1,3h-6      c-1.5-0.7-2.8-1.3-4-2C125.4-25,123.8-26,121.9-27.3z" :style="{ fill: getSvgKey('PHRAVD-1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <path id="PHRAVG" class="st0" d="M78.6-27.3c-3-1.3-5.2-2-6.7-2s-3.2,0.7-5,2c-0.9,0.6-1.5,1.2-2,2s-0.8,1.8-1,3h6      c1.5-0.7,2.8-1.3,4-2S76.6-26,78.6-27.3z" :style="{ fill: getSvgKey('PHRAVG-1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="CPT0" x="113.7" y="-1.2" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('CPT0', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="CPT1" x="95.7" y="-1.2" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('CPT1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="CPT2" x="77.7" y="-1.2" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('CPT2', damage.location, damage.svgLocation, damage.severity)}"/>
                     <rect id="PRCAV1" x="126.7" y="-36.2" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('PRCAV1', damage.location, damage.svgLocation, damage.severity)}" />
                     <rect id="PRCAV2" x="95.7" y="-42.2" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('PRCAV2', damage.location, damage.svgLocation, damage.severity)}" />
                     <rect id="PRCAV3" x="64.7" y="-36.2" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('PRCAV3', damage.location, damage.svgLocation, damage.severity)}" />
-                    <rect id="CPT3" x="105.7" y="-18.2" class="st0" width="8.8" height="2.8" />
-                    <rect id="CPT4" x="87.7" y="-18.2" class="st0" width="8.8" height="2.8" />
-                    <rect id="TOI2" x="113.7" y="58.8" class="st0" width="8.8" height="2.8" />
-                    <rect id="TOI1" x="95.7" y="58.8" class="st0" width="8.8" height="2.8" />
-                    <rect id="TOI0" x="77.7" y="58.8" class="st0" width="8.8" height="2.8" />
-                    <rect id="TOI5" x="113.7" y="88.8" class="st0" width="8.8" height="2.8" />
-                    <rect id="TOI4" x="95.7" y="88.8" class="st0" width="8.8" height="2.8" />
-                    <rect id="TOI3" x="77.7" y="88.8" class="st0" width="8.8" height="2.8" />
-                    <rect id="TOI8" x="113.7" y="120.8" class="st0" width="8.8" height="2.8" />
-                    <rect id="TOI7" x="95.7" y="120.8" class="st0" width="8.8" height="2.8" />
-                    <rect id="TOI6" x="77.7" y="120.8" class="st0" width="8.8" height="2.8" />
-                    <rect id="CFR2" x="113.7" y="163.8" class="st0" width="8.8" height="2.8" />
-                    <rect id="CFR1" x="95.7" y="163.8" class="st0" width="8.8" height="2.8" />
-                    <rect id="CFR0" x="77.7" y="163.8" class="st0" width="8.8" height="2.8" />
-                    <rect id="PRCAR3" x="126.7" y="183.8" class="st0" width="8.8" height="2.8" />
-                    <rect id="PRCAR2" x="95.7" y="183.8" class="st0" width="8.8" height="2.8" />
-                    <rect id="PRCAR1" x="64.7" y="183.8" class="st0" width="8.8" height="2.8" />
-                    <path id="CLR" class="st0" d="M114.6-28.3c-4.6,1.1-22,1-28,0c-4.3-0.7-10-4-10-6c0-1.3,3-2.3,9-3c6.7-0.7,11.7-1,15-1      s8,0.3,14,1s9,1.7,9,3C123.6-32.3,119.2-29.4,114.6-28.3z" />
+                    <rect id="CPT3" x="105.7" y="-18.2" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('CPT3', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="CPT4" x="87.7" y="-18.2" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('CPT4', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="TOI2" x="113.7" y="58.8" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('TOI2', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="TOI1" x="95.7" y="58.8" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('TOI1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="TOI0" x="77.7" y="58.8" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('TOI0', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="TOI5" x="113.7" y="88.8" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('TOI5', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="TOI4" x="95.7" y="88.8" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('TOI4', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="TOI3" x="77.7" y="88.8" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('TOI3', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="TOI8" x="113.7" y="120.8" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('TOI8', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="TOI7" x="95.7" y="120.8" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('TOI7', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="TOI6" x="77.7" y="120.8" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('TOI6', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="CFR2" x="113.7" y="163.8" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('CFR2', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="CFR1" x="95.7" y="163.8" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('CFR1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="CFR0" x="77.7" y="163.8" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('CFR0', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="PRCAR3" x="126.7" y="183.8" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('PRCAR3', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="PRCAR2" x="95.7" y="183.8" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('PRCAR2', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="PRCAR1" x="64.7" y="183.8" class="st0" width="8.8" height="2.8" :style="{ fill: getSvgKey('PRCAR1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <path id="CLR" class="st0" d="M114.6-28.3c-4.6,1.1-22,1-28,0c-4.3-0.7-10-4-10-6c0-1.3,3-2.3,9-3c6.7-0.7,11.7-1,15-1      s8,0.3,14,1s9,1.7,9,3C123.6-32.3,119.2-29.4,114.6-28.3z" :style="{ fill: getSvgKey('CLR-1', damage.location, damage.svgLocation, damage.severity)}"/>
                     <g id="Group-5" transform="translate(7.000000, 63.000000)">
                       <path id="Path-27" class="st0" d="M58.6-107.3c-0.7,0.7-1,1.7-1,3s0.7,2.3,2,3s2.7,0.7,4,0c2-1,4.5-1.6,5-3s-0.9-2.8-3-3       C64.2-107.5,61.9-107.5,58.6-107.3z"/>
                     </g>
                     <g id="Group-5_1_" transform="translate(7.000000, 63.000000)">
                       <path id="Path-27_1_" class="st0" d="M120.7-107.3c-2.1,0.2-3.5,1.6-3,3s3,2,5,3c1.3,0.7,2.7,0.7,4,0s2-1.7,2-3s-0.3-2.3-1-3       C124.4-107.5,122.1-107.5,120.7-107.3z"/>
                     </g>
-                    <circle id="ABRAVG" class="st0" cx="67.6" cy="-41.3" r="2" />
-                    <circle id="ABRAVD" class="st0" cx="132.7" cy="-41.3" r="2" />
-                    <path id="PRBAV" class="st0" d="M72.6,50.7c10.9-1.3,19.6-2,26-2s16.1,0.7,29,2l4-30c-0.9-4.8-2.2-7.8-4-9c-9-5.9-21-6-27-6      c-5.7,0-20.1,0.6-29,6c-2.1,1.3-3.1,4.3-3,9L72.6,50.7z" />
-                    <path id="PRBAR" class="st0" d="M124.9,142.3c-9.9,0.8-17.6,1.3-23.1,1.4s-15-0.1-26.9-0.7c0.1,3.2,1.6,5.4,2.8,6.8      c1.2,1.4,3.5,3.1,7.5,4c6.8,0.5,12,1,15.5,0.9s8.9-0.6,15.6-1c2.6-0.3,4.6-1.8,5.8-3.3C123.3,148.9,124.2,146.2,124.9,142.3z" />
-                    <path id="PHRARG" class="st0" d="M77.6,154.7l-3,6c-2.9,0.5-4.9,0.5-6,0s-2.5-1.8-4-4v-4L77.6,154.7z" />
-                    <path id="PHRARD" class="st0" d="M135.6,152.7v4c-1.5,2.2-2.9,3.5-4,4s-3.1,0.5-6,0l-3-6L135.6,152.7z" />
-                    <polygon id="ABRARG" class="st0" points="70.6,182.7 74.6,179.7 68.6,179.7 63.6,182.7     " />
-                    <polygon id="ABRARD" class="st0" points="129.6,182.7 125.6,179.7 131.6,179.7 136.6,182.7     " />
+                    <circle id="ABRAVG" class="st0" cx="67.6" cy="-41.3" r="2" :style="{ fill: getSvgKey('ABRAVG-1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <circle id="ABRAVD" class="st0" cx="132.7" cy="-41.3" r="2" :style="{ fill: getSvgKey('ABRAVD-1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <path id="PRBAV" class="st0" d="M72.6,50.7c10.9-1.3,19.6-2,26-2s16.1,0.7,29,2l4-30c-0.9-4.8-2.2-7.8-4-9c-9-5.9-21-6-27-6      c-5.7,0-20.1,0.6-29,6c-2.1,1.3-3.1,4.3-3,9L72.6,50.7z" :style="{ fill: getSvgKey('PRBAV-1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <path id="PRBAR" class="st0" d="M124.9,142.3c-9.9,0.8-17.6,1.3-23.1,1.4s-15-0.1-26.9-0.7c0.1,3.2,1.6,5.4,2.8,6.8      c1.2,1.4,3.5,3.1,7.5,4c6.8,0.5,12,1,15.5,0.9s8.9-0.6,15.6-1c2.6-0.3,4.6-1.8,5.8-3.3C123.3,148.9,124.2,146.2,124.9,142.3z" :style="{ fill: getSvgKey('PRBAR-1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <path id="PHRARG" class="st0" d="M77.6,154.7l-3,6c-2.9,0.5-4.9,0.5-6,0s-2.5-1.8-4-4v-4L77.6,154.7z" :style="{ fill: getSvgKey('PHRARG-1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <path id="PHRARD" class="st0" d="M135.6,152.7v4c-1.5,2.2-2.9,3.5-4,4s-3.1,0.5-6,0l-3-6L135.6,152.7z" :style="{ fill: getSvgKey('PHRARD-1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <polygon id="ABRARG" class="st0" points="70.6,182.7 74.6,179.7 68.6,179.7 63.6,182.7     " :style="{ fill: getSvgKey('ABRARG-1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <polygon id="ABRARD" class="st0" points="129.6,182.7 125.6,179.7 131.6,179.7 136.6,182.7     " :style="{ fill: getSvgKey('ABRARD-1', damage.location, damage.svgLocation, damage.severity)}"/>
                   </g>
                   <g id="gauche" transform="translate(23.000000, 122.000000)">
                     <path id="Path-28" class="st0" d="M20.6-90.3l-1,4l-2-1l1,11l-6,7c-2.2-2.6-4.2-4.2-6-5s-4.8-1.1-9-1v-18h14c2.3,0.3,4,0.7,5,1      S18.9-91.3,20.6-90.3z"/>
@@ -84,18 +84,18 @@
                     <path id="Path-33" class="st0" d="M-1.4,40.7c-0.5-10.6-0.9-20.9-1-31s-0.1-25.1,0-45c8.3-0.8,14.6-1.2,19-1s7.7,0.8,10,2v-7      c7.7,8.9,13,17.3,16,25s4.7,17.4,5,29v32l-18,10h-13c-0.7-3.3-2.3-6.3-5-9S4.6,41.4-1.4,40.7z"/>
                     <path id="Path-34" class="st0" d="M-2.4,9.7c10-0.3,17.3-0.3,22,0s8.4,1,11,2l17,1"/>
                     <polyline id="Path-35" class="st0" points="33.6,52.7 30.6,11.7 27.6,-36.3 28.6,-37.3     "/>
-                    <path id="VTRAVG" class="st0" d="M28.6-37.3l3,47l15,1c-0.3-8.4-1.6-15.7-4-22S35.6-26.3,28.6-37.3z" />
-                    <polygon id="VTRARG" class="st0" points="32.6,16.7 34.6,46.7 46.6,41.7 46.6,16.7     " />
-                    <path id="RTRG" class="st0" d="M28.6-28.3v3c0.8,0.6,1.4,0.9,2,1s1.6,0.1,3,0c0.1-2,0.1-3.3,0-4s-0.5-1.4-1-2h-3L28.6-28.3z"/>
+                    <path id="VTRAVG" class="st0" d="M28.6-37.3l3,47l15,1c-0.3-8.4-1.6-15.7-4-22S35.6-26.3,28.6-37.3z" :style="{ fill: getSvgKey('VTRAVG-1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <polygon id="VTRARG" class="st0" points="32.6,16.7 34.6,46.7 46.6,41.7 46.6,16.7     " :style="{ fill: getSvgKey('VTRARG-1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <path id="RTRG" class="st0" d="M28.6-28.3v3c0.8,0.6,1.4,0.9,2,1s1.6,0.1,3,0c0.1-2,0.1-3.3,0-4s-0.5-1.4-1-2h-3L28.6-28.3z" :style="{ fill: getSvgKey('RTRG-1', damage.location, damage.svgLocation, damage.severity)}"/>
                     <path id="Path-38" class="st0" d="M27.6-32.3c-1.1-0.2-1.8-0.2-2,0s-0.2,0.9,0,2l3,2l1-2L27.6-32.3z" />
-                    <path id="PGNAVG" class="st0" d="M21.6,2.2c0,2.5,0,4.5,0.5,4.5s0.5-2,0.5-4.5s0-4.5-0.5-4.5S21.6-0.3,21.6,2.2z" />
-                    <path id="PGNARG" class="st0" d="M24.6,49.2c0,2.5,0,4.5,0.5,4.5s0.5-2,0.5-4.5s0-4.5-0.5-4.5S24.6,46.7,24.6,49.2z" />
+                    <path id="PGNAVG" class="st0" d="M21.6,2.2c0,2.5,0,4.5,0.5,4.5s0.5-2,0.5-4.5s0-4.5-0.5-4.5S21.6-0.3,21.6,2.2z" :style="{ fill: getSvgKey('PGNAVG-1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <path id="PGNARG" class="st0" d="M24.6,49.2c0,2.5,0,4.5,0.5,4.5s0.5-2,0.5-4.5s0-4.5-0.5-4.5S24.6,46.7,24.6,49.2z" :style="{ fill: getSvgKey('PGNARG-1', damage.location, damage.svgLocation, damage.severity)}"/>
                     <path id="Path-41" class="st0" d="M15.6,91.7l13-5l20-14l-1,7c-2.1,2.4-4.1,4.4-6,6s-5.3,3.9-10,7c-2,1.1-4,1.8-6,2s-6,0.6-12,1      c0.3,0,0.7-0.3,1-1S15.3,93,15.6,91.7z"/>
                     <path id="Path-96" class="st0" d="M24.6,92.7c1,0.5,2,0.9,3,1s2.4-0.2,4-1v-17c-2,0.7-3.3,2-4,4S25.9,86,24.6,92.7z"/>
                     <path id="Path-95" class="st0" d="M46.6,80.7h-3l-8,6l-1,4c2.9-1.8,5.2-3.5,7-5S45.1,82.5,46.6,80.7z"/>
                     <path id="Path-94" class="st0" d="M29.6-49.3v6c3.4,4.9,6,9.2,8,13s4.6,9.8,8,18l3-1c-4.5-9.8-7.8-16.8-10-21      S33.4-43.5,29.6-49.3z"/>
                     <path id="Path-44" class="st0" d="M7.6,97.7l-1-20c3.5-1.7,6.1-4.4,8-8s2.5-8.6,2-15h13l4-2v7c1.1,2.2,2.1,3.8,3,5      c0.9,1.2,2.6,2.8,5,5c0.9,0.1,1.6,0.1,2,0s0.7-0.5,1-1l3-24"/>
-                    <path id="CSTARG" class="st0" d="M35.6,51.7v9c1.8,2.4,3.1,4.1,4,5c0.5,0.5,1,1,2,2c0.7,0.7,1.1,0.1,1.2-1.6l2.8-20.4L35.6,51.7      z" />
+                    <path id="CSTARG" class="st0" d="M35.6,51.7v9c1.8,2.4,3.1,4.1,4,5c0.5,0.5,1,1,2,2c0.7,0.7,1.1,0.1,1.2-1.6l2.8-20.4L35.6,51.7      z" :style="{ fill: getSvgKey('CSTARG-1', damage.location, damage.svgLocation, damage.severity)}"/>
                     <rect id="AILAVG" x="19.7" y="-59.2" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('AILAVG-1', damage.location, damage.svgLocation, damage.severity)}"/>
                     <rect id="PRCAV4" x="9.7" y="-86.2" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('PRCAV4', damage.location, damage.svgLocation, damage.severity)}"/>
                     <rect id="PRTAVG0" x="19.7" y="-29.2" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('PRTAVG0', damage.location, damage.svgLocation, damage.severity)}"/>
@@ -130,33 +130,33 @@
                     <path id="Path-33_2_" class="st0" d="M142.4,45.9c-2.7,2.7-4.3,5.7-5,9h-13l-18-10v-32c0.3-11.6,2-21.3,5-29s8.3-16.1,16-25v7      c2.3-1.2,5.6-1.8,10-2s10.7,0.2,19,1c0.1,19.9,0.1,34.9,0,45s-0.5,20.4-1,31C149.4,41.6,145.1,43.2,142.4,45.9z"/>
                     <path id="Path-34_2_" class="st0" d="M106.4,12.9l17-1c2.6-1,6.3-1.7,11-2s12-0.3,22,0"/>
                     <polyline id="Path-35_2_" class="st0" points="125.4,-37.1 126.4,-36.1 123.4,11.9 120.4,52.9     "/>
-                    <path id="VTRAVD" class="st0" d="M111.4-11.1c-2.4,6.3-3.7,13.6-4,22l15-1l3-47C118.4-26.1,113.8-17.4,111.4-11.1z" />
-                    <polygon id="VTRARD" class="st0" points="107.4,16.9 107.4,41.9 119.4,46.9 121.4,16.9     " />
-                    <path id="RTRD" class="st0" d="M124.4-30.1h-3c-0.5,0.6-0.9,1.3-1,2s-0.1,2,0,4c1.4,0.1,2.4,0.1,3,0s1.2-0.4,2-1v-3L124.4-30.1z" />
+                    <path id="VTRAVD" class="st0" d="M111.4-11.1c-2.4,6.3-3.7,13.6-4,22l15-1l3-47C118.4-26.1,113.8-17.4,111.4-11.1z" :style="{ fill: getSvgKey('VTRAVD-1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <polygon id="VTRARD" class="st0" points="107.4,16.9 107.4,41.9 119.4,46.9 121.4,16.9     " :style="{ fill: getSvgKey('VTRARD-1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <path id="RTRD" class="st0" d="M124.4-30.1h-3c-0.5,0.6-0.9,1.3-1,2s-0.1,2,0,4c1.4,0.1,2.4,0.1,3,0s1.2-0.4,2-1v-3L124.4-30.1z" :style="{ fill: getSvgKey('RTRD-1', damage.location, damage.svgLocation, damage.severity)}"/>
                     <path id="Path-38_2_" class="st0" d="M124.4-30.1l1,2l3-2c0.2-1.1,0.2-1.8,0-2c-0.2-0.2-0.9-0.2-2,0L124.4-30.1z"/>
-                    <path id="PGNAVD" class="st0" d="M131.9-2.1c-0.5,0-0.5,2-0.5,4.5s0,4.5,0.5,4.5s0.5-2,0.5-4.5S132.4-2.1,131.9-2.1z" />
-                    <path id="PGNARD" class="st0" d="M128.9,44.9c-0.5,0-0.5,2-0.5,4.5s0,4.5,0.5,4.5s0.5-2,0.5-4.5S129.4,44.9,128.9,44.9z" />
+                    <path id="PGNAVD" class="st0" d="M131.9-2.1c-0.5,0-0.5,2-0.5,4.5s0,4.5,0.5,4.5s0.5-2,0.5-4.5S132.4-2.1,131.9-2.1z" :style="{ fill: getSvgKey('PGNAVD-1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <path id="PGNARD" class="st0" d="M128.9,44.9c-0.5,0-0.5,2-0.5,4.5s0,4.5,0.5,4.5s0.5-2,0.5-4.5S129.4,44.9,128.9,44.9z" :style="{ fill: getSvgKey('PGNARD-1', damage.location, damage.svgLocation, damage.severity)}"/>
                     <path id="Path-41_2_" class="st0" d="M139.4,94.9c0.3,0.7,0.7,1,1,1c-6-0.4-10-0.8-12-1s-4-0.9-6-2c-4.7-3.1-8.1-5.4-10-7      s-3.9-3.6-6-6l-1-7l20,14l13,5C138.7,93.2,139.1,94.2,139.4,94.9z"/>
                     <path id="Path-97" class="st0" d="M126.4,79.9c-0.7-2-2-3.3-4-4v17c1.6,0.8,3,1.1,4,1s2-0.5,3-1      C128.1,86.2,127.1,81.9,126.4,79.9z"/>
                     <path id="Path-93" class="st0" d="M112.4,85.9c1.8,1.5,4.1,3.2,7,5l-1-4l-8-6h-3C108.9,82.7,110.6,84.4,112.4,85.9z"/>
                     <path id="Path-92" class="st0" d="M115.4-34.1c-2.2,4.2-5.5,11.2-10,21l3,1c3.4-8.2,6-14.2,8-18s4.6-8.1,8-13v-6      C120.6-43.3,117.6-38.3,115.4-34.1z"/>
                     <path id="Path-44_2_" class="st0" d="M106.4,44.9l3,24c0.3,0.5,0.6,0.9,1,1s1.1,0.1,2,0c2.4-2.2,4.1-3.8,5-5s1.9-2.8,3-5v-7l4,2      h13c-0.5,6.4,0.1,11.4,2,15s4.5,6.3,8,8l-1,20"/>
-                    <path id="CSTARD" class="st0" d="M108.4,45.9l2.8,20.4c0.1,1.7,0.5,2.3,1.2,1.6c1-1,1.5-1.5,2-2c0.9-0.9,2.2-2.6,4-5v-9      L108.4,45.9z" />
-                    <rect id="AILAVD" x="131.5" y="-59" class="st0" width="2.8" height="8.8" />
+                    <path id="CSTARD" class="st0" d="M108.4,45.9l2.8,20.4c0.1,1.7,0.5,2.3,1.2,1.6c1-1,1.5-1.5,2-2c0.9-0.9,2.2-2.6,4-5v-9      L108.4,45.9z" :style="{ fill: getSvgKey('CSTARD-1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="AILAVD" x="131.5" y="-59" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('AILAVD-1', damage.location, damage.svgLocation, damage.severity)}" />
                     <rect id="PRCAV0" x="141.5" y="-86" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('PRCAV0', damage.location, damage.svgLocation, damage.severity)}" />
-                    <rect id="PRTAVD0" x="131.5" y="-29" class="st0" width="2.8" height="8.8" />
-                    <rect id="PRTAVD2" x="148.5" y="-29" class="st0" width="2.8" height="8.8" />
-                    <rect id="PRTAVD1" x="134.5" y="-5" class="st0" width="2.8" height="8.8" />
-                    <rect id="PRTAVD3" x="148.5" y="-5" class="st0" width="2.8" height="8.8" />
-                    <rect id="BDCD0" x="157.5" y="-18" class="st0" width="2.8" height="8.8" />
-                    <rect id="BDCD1" x="156.5" y="24" class="st0" width="2.8" height="8.8" />
-                    <rect id="PRTARD0" x="131.5" y="17" class="st0" width="2.8" height="8.8" />
-                    <rect id="PRTARD2" x="148.5" y="17" class="st0" width="2.8" height="8.8" />
-                    <rect id="PRTARD1" x="124.5" y="34" class="st0" width="2.8" height="8.8" />
-                    <rect id="PRTARD3" x="141.5" y="34" class="st0" width="2.8" height="8.8" />
-                    <rect id="AILARD0" x="124.5" y="60" class="st0" width="2.8" height="8.8" />
-                    <rect id="AILARD1" x="139.5" y="80" class="st0" width="2.8" height="8.8" />
-                    <rect id="PRCAR4" x="151.5" y="82" class="st0" width="2.8" height="8.8" />
+                    <rect id="PRTAVD0" x="131.5" y="-29" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('PRTAVD0', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="PRTAVD2" x="148.5" y="-29" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('PRTAVD2', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="PRTAVD1" x="134.5" y="-5" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('PRTAVD1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="PRTAVD3" x="148.5" y="-5" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('PRTAVD3', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="BDCD0" x="157.5" y="-18" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('BDCD0', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="BDCD1" x="156.5" y="24" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('BDCD1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="PRTARD0" x="131.5" y="17" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('PRTARD0', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="PRTARD2" x="148.5" y="17" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('PRTARD2', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="PRTARD1" x="124.5" y="34" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('PRTARD1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="PRTARD3" x="141.5" y="34" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('PRTARD3', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="AILARD0" x="124.5" y="60" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('AILARD0', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="AILARD1" x="139.5" y="80" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('AILARD1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="PRCAR4" x="151.5" y="82" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('PRCAR4', damage.location, damage.svgLocation, damage.severity)}"/>
                   </g>
                 </g>
               </g>
