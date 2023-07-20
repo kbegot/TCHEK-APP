@@ -1,5 +1,5 @@
 <template>
-    <div v-for="(damage, iamges, index) in vehiculeStore.damage" :key="index" class="flex">
+    <div v-for="(damage, index) in vehiculeStore.damage" :key="index" class="flex">
         <div>
           <p>Id: {{ damage.id }}</p>
           <p>Détection automatique: {{ damage.isAuto }}</p>
@@ -10,7 +10,7 @@
           <p>Images: ({{ damage.roiPtr.imagePtr.id }})</p>
           <img :src="getImageUrl(damage.roiPtr.imagePtr.id)" alt="" class="w-[200px]">
         </div>
-          <svg class="w-[350px]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Calque_1" x="0px" y="0px" viewBox="0 0 200 250" style="enable-background:new 0 0 200 250;" xml:space="preserve">
+        <svg class="w-[350px]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Calque_1" x="0px" y="0px" viewBox="0 0 200 250" style="enable-background:new 0 0 200 250;" xml:space="preserve">
             
             <g id="Page-1">
               <g id="UI-Detection-2" transform="translate(-618.000000, -710.000000)">
@@ -28,7 +28,7 @@
                     <path id="Path-23" class="st0" d="M73.6,187.7h52c-1-1.3-2-2.3-3-3s-3-1.7-6-3h-33c-2.7,1.2-4.7,2.2-6,3S75,186.5,73.6,187.7z"/>
                     <path id="PHRAVD" class="st0" d="M121.9-27.3c3-1.3,5.2-2,6.7-2c1.5,0,3.2,0.7,5,2c0.9,0.6,1.5,1.2,2,2s0.8,1.8,1,3h-6      c-1.5-0.7-2.8-1.3-4-2C125.4-25,123.8-26,121.9-27.3z"/>
                     <path id="PHRAVG" class="st0" d="M78.6-27.3c-3-1.3-5.2-2-6.7-2s-3.2,0.7-5,2c-0.9,0.6-1.5,1.2-2,2s-0.8,1.8-1,3h6      c1.5-0.7,2.8-1.3,4-2S76.6-26,78.6-27.3z"/>
-                    <rect id="CPT0" x="113.7" y="-1.2" class="st0" width="8.8" height="2.8"/>
+                    <rect id="CPT0" x="113.7" y="-1.2" class="st0" width="8.8" height="2.8" />
                     <rect id="CPT1" x="95.7" y="-1.2" class="st0" width="8.8" height="2.8"/>
                     <rect id="CPT2" x="77.7" y="-1.2" class="st0" width="8.8" height="2.8"/>
                     <rect id="PRCAV1" x="126.7" y="-36.2" class="st0" width="8.8" height="2.8"/>
@@ -98,13 +98,13 @@
                     <path id="CSTARG" class="st0" d="M35.6,51.7v9c1.8,2.4,3.1,4.1,4,5c0.5,0.5,1,1,2,2c0.7,0.7,1.1,0.1,1.2-1.6l2.8-20.4L35.6,51.7      z"/>
                     <rect id="AILAVG" x="19.7" y="-59.2" class="st0" width="2.8" height="8.8"/>
                     <rect id="PRCAV4" x="9.7" y="-86.2" class="st0" width="2.8" height="8.8"/>
-                    <rect id="PRTAVG0" x="19.7" y="-29.2" class="st0" width="2.8" height="8.8"/>
-                    <rect id="PRTAVG2" x="2.7" y="-29.2" class="st0" width="2.8" height="8.8"/>
-                    <rect id="PRTAVG1" x="16.7" y="-5.2" class="st0" width="2.8" height="8.8"/>
-                    <rect id="PRTAVG3" x="2.7" y="-5.2" class="st0" width="2.8" height="8.8"/>
+                    <rect id="PRTAVG0" x="19.7" y="-29.2" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('PRTAVG0', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="PRTAVG2" x="2.7" y="-29.2" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('PRTAVG2', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="PRTAVG1" x="16.7" y="-5.2" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('PRTAVG1', damage.location, damage.svgLocation, damage.severity)}"/>
+                    <rect id="PRTAVG3" x="2.7" y="-5.2" class="st0" width="2.8" height="8.8" :style="{ fill: getSvgKey('PRTAVG3', damage.location, damage.svgLocation, damage.severity)}"/>
                     <rect id="BDCG0" x="-6.3" y="-18.2" class="st0" width="2.8" height="8.8"/>
                     <rect id="BDCG1" x="-5.3" y="23.8" class="st0" width="2.8" height="8.8"/>
-                    <rect id="PRTARG0" x="19.7" y="16.8" class="st0" width="2.8" height="8.8" style="fill: red;"/>
+                    <rect id="PRTARG0" x="19.7" y="16.8" class="st0" width="2.8" height="8.8"/>
                     <rect id="PRTARG2" x="2.7" y="16.8" class="st0" width="2.8" height="8.8"/>
                     <rect id="PRTARG1" x="26.7" y="33.8" class="st0" width="2.8" height="8.8"/>
                     <rect id="PRTARG3" x="9.7" y="33.8" class="st0" width="2.8" height="8.8"/>
@@ -142,7 +142,7 @@
                     <path id="Path-92" class="st0" d="M115.4-34.1c-2.2,4.2-5.5,11.2-10,21l3,1c3.4-8.2,6-14.2,8-18s4.6-8.1,8-13v-6      C120.6-43.3,117.6-38.3,115.4-34.1z"/>
                     <path id="Path-44_2_" class="st0" d="M106.4,44.9l3,24c0.3,0.5,0.6,0.9,1,1s1.1,0.1,2,0c2.4-2.2,4.1-3.8,5-5s1.9-2.8,3-5v-7l4,2      h13c-0.5,6.4,0.1,11.4,2,15s4.5,6.3,8,8l-1,20"/>
                     <path id="CSTARD" class="st0" d="M108.4,45.9l2.8,20.4c0.1,1.7,0.5,2.3,1.2,1.6c1-1,1.5-1.5,2-2c0.9-0.9,2.2-2.6,4-5v-9      L108.4,45.9z"/>
-                    <rect id="AILAVD" x="131.5" y="-59" class="st0" width="2.8" height="8.8" style="fill: red;"/>
+                    <rect id="AILAVD" x="131.5" y="-59" class="st0" width="2.8" height="8.8"/>
                     <rect id="PRCAV0" x="141.5" y="-86" class="st0" width="2.8" height="8.8"/>
                     <rect id="PRTAVD0" x="131.5" y="-29" class="st0" width="2.8" height="8.8"/>
                     <rect id="PRTAVD2" x="148.5" y="-29" class="st0" width="2.8" height="8.8"/>
@@ -161,12 +161,20 @@
                 </g>
               </g>
             </g>
-            </svg>
+        </svg>
     </div>
 </template>
+<style type="text/css">
+  .st0{fill:none;stroke:#979797;stroke-width:0.3;}
+  .highlight-image {
+    fill: red;
+  }
+</style>
 <script setup lang="ts">
 import { useVehicleStore } from '../../stores/tchek';
 import { useLocationFilter, useTypeFilter,  useSeverityFilter} from '../../stores/filter';
+
+
 
 const vehiculeStore = useVehicleStore();
 const locationFilter = useLocationFilter();
@@ -192,7 +200,39 @@ const getImageUrl = (imageId: string) => {
   const matchingImage = vehiculeStore.images?.find(image => image.id === imageId)
   return matchingImage ? matchingImage.url : 'Inconnu';
 }
+
+// Create a mapping of severity levels to colors
+const severityColors: { [key: string]: string } = {
+  SEV3: 'red',
+  SEV4: 'red',
+  SEV5: 'red',
+  SEV0: 'blue',
+  SEV1: 'blue',
+  SEV2: 'blue',
+};
+
+// Assuming 'severity' is a variable containing the severity level
+// Assuming 'location' and 'svglocation' are variables containing the corresponding values
+
+// Combine common conditions and use a switch statement
+function getSvgKey(key: string, severity: string): string | undefined {
+  if (key === location + svglocation) {
+    switch (severity) {
+      case 'SEV0':
+      case 'SEV1':
+      case 'SEV2':
+        return severityColors[severity];
+      case 'SEV3':
+      case 'SEV4':
+      case 'SEV5':
+        return severityColors[severity];
+      default:
+        return undefined; // Return undefined for other severity levels
+    }
+  }
+  return undefined; // Return undefined if key doesn't match
+}
+
+  
+
 </script>
-<style type="text/css">
-  .st0{fill:none;stroke:#979797;stroke-width:0.3;}
-</style>

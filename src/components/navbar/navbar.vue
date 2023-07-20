@@ -20,8 +20,4 @@
   </style>
   
   <script setup lang="ts">
-  import type { Ref } from 'vue';
-  import {ref } from 'vue';
-      const showDropdown: Ref<boolean> = ref(false);
-      const showDropdown2: Ref<boolean> = ref(false);
   </script>

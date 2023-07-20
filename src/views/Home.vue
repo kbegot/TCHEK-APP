@@ -4,7 +4,6 @@
     <button class="p-3 text-white bg-green-600 rounded-md"
             @click="tchekValid">Valider la Reprise Tchek</button>
   </div>
-  <img class="w-[400px]" src="../assets/test.svg" alt="">
 </template>
 
 

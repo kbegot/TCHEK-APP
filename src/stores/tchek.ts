@@ -19,7 +19,7 @@ interface Damage {
   severity: string;
   type: string;
   roiPtr: RoiPointer;
-  svgLocation: number;
+  svgLocation: string;
 }
 interface RoiPointer{
   imagePtr: ImagePointer
