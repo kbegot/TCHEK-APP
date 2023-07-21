@@ -1,4 +1,5 @@
 <template>
+    <p>Liste des dommages du véhicule {{vehiculeStore.immat}}: </p>
     <div v-for="(damage, index) in vehiculeStore.damage" :key="index" class="flex">
         <div>
           <p>Id: {{ damage.id }}</p>
@@ -10,7 +11,7 @@
           <p>Images: ({{ damage.roiPtr.imagePtr.id }})</p>
           <img :src="getImageUrl(damage.roiPtr.imagePtr.id)" alt="" class="w-[200px]">
         </div>
-        <svg class="w-[300px]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Calque_1" x="0px" y="0px" viewBox="0 0 200 250" style="enable-background:new 0 0 200 250;" xml:space="preserve">
+        <svg class="w-[250px]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Calque_1" x="0px" y="0px" viewBox="0 0 200 250" style="enable-background:new 0 0 200 250;" xml:space="preserve">
             
             <g id="Page-1">
               <g id="UI-Detection-2" transform="translate(-618.000000, -710.000000)">
