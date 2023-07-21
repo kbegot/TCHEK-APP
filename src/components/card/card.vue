@@ -9,6 +9,7 @@
           <p>Type: {{ getTypeName(damage.type)}} ({{ damage.type }})</p>
           <p>Svg Location:  {{ damage.svgLocation }}</p>
           <p>Images: ({{ damage.roiPtr.imagePtr.id }})</p>
+          <p>Price: {{ getPrice(damage.location, damage.severity) }}</p>
           <img :src="getImageUrl(damage.roiPtr.imagePtr.id)" alt="" class="w-[200px]">
         </div>
         <svg class="w-[250px]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Calque_1" x="0px" y="0px" viewBox="0 0 200 250" style="enable-background:new 0 0 200 250;" xml:space="preserve">
@@ -170,11 +171,13 @@
 </style>
 <script setup lang="ts">
 import { useVehicleStore } from '../../stores/tchek';
+import { useMatriceStore } from '../../stores/matrice'
 import { useLocationFilter, useTypeFilter,  useSeverityFilter} from '../../stores/filter';
 
 
 
 const vehiculeStore = useVehicleStore();
+const matriceStore = useMatriceStore();
 const locationFilter = useLocationFilter();
 const severityFilter = useSeverityFilter();
 const typeFilter = useTypeFilter();
@@ -210,6 +213,10 @@ function getSvgKey(key: string, location: string, svglocation: string, severity:
  }
 
 }
-  
+
+function getPrice(loc: string, sev: string) {
+ const matchingMatrice = matriceStore.data?.find(matrice => matrice.location === loc && matrice.severity === sev)
+ return matchingMatrice ? matchingMatrice.price : 'Pas de prix';
+} 
 
 </script>
