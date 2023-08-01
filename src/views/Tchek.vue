@@ -37,8 +37,8 @@ onMounted(async () => {
 
 const setTchekData = () => {
   isTchekToken.value = true;
-  iframeSrc.value = `https://webapp.tchek.fr/fr/pwa/sso/intro-shoot-inspect?token=${vehiculeStore.token}`;
-  rapportSrc.value = `https://webapp.tchek.fr/fr/report?token=${vehiculeStore.token}`;
+  iframeSrc.value = `https://preprod.webapp.tchek.fr/fr/services/${vehiculeStore.token}`;
+  rapportSrc.value = `https://preprod.webapp.tchek.fr/fr/report?token=${vehiculeStore.token}`;
 };
 
 const tchekToken = async () => {

@@ -43,13 +43,13 @@ export const useVehicleStore = defineStore({
   },
   actions: {
     async getTchekToken(){
-      await axios.post('https://alto.tchek.fr/apiV1/tokenmanager/token', {
+      await axios.post('https://preprod.alto.tchek.fr/apiV1/tokenmanager/token', {
             validity: 5, // en jours
             shootInspect: true,
             fastTrack: true,
             report: true,
-            cost: false,
-            downloadRoi: false
+            cost: true,
+            downloadRoi: true
         }, {
             headers: {
                 'X-API-Key': import.meta.env.VITE_API_KEY,
@@ -59,11 +59,12 @@ export const useVehicleStore = defineStore({
     },
 
     async getTchekReport() {
-      await axios.get('https://alto.tchek.fr/apiV1/report/loadtchek', {
+      await axios.get('https://preprod.alto.tchek.fr/apiV1/report/loadtchek', {
         params: {
-          token: 'TDAF74E' //T8C7C4A roue
+          token: 'T25718C' //T8C7C4A roue
                            //TEE3F6A sans roue
                            //TDAF74E all 
+                           //T6C80A4
         },
         headers: {
           'X-API-Key': import.meta.env.VITE_API_KEY,
