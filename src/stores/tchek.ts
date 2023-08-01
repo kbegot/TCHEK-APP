@@ -15,6 +15,7 @@ interface Image {
 interface Damage {
   id: string;
   isAuto: boolean;
+  isDeleted: boolean;
   location: string;
   severity: string;
   type: string;
@@ -61,10 +62,10 @@ export const useVehicleStore = defineStore({
     async getTchekReport() {
       await axios.get('https://preprod.alto.tchek.fr/apiV1/report/loadtchek', {
         params: {
-          token: 'T25718C' //T8C7C4A roue
+          token: 'TEA5F10' //T8C7C4A roue
                            //TEE3F6A sans roue
                            //TDAF74E all 
-                           //T6C80A4
+                           //TEA5F10 vraie data
         },
         headers: {
           'X-API-Key': import.meta.env.VITE_API_KEY,
@@ -72,7 +73,7 @@ export const useVehicleStore = defineStore({
         },
       }).then((response) => {
         this.clientLastName = response.data.data.tchek.report.clientLastName;
-        this.damage = response.data.data.damages.map((damage: object) => damage);
+        this.damage = response.data.data.damages.filter((damage: Damage) => !damage.isDeleted);
         this.images = response.data.data.images.map((images: object) => images)
       });
     }
