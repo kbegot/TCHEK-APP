@@ -12,7 +12,7 @@ interface Image {
   id: string;
   url: string;
 }
-interface Damage {
+export interface Damage {
   id: string;
   isAuto: boolean;
   isDeleted: boolean;
