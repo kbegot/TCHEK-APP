@@ -14,9 +14,9 @@
     </nav>
 
     <!-- Mobile menu items -->
-    <div :class="{'hidden': !isMenuOpen, 'block': isMenuOpen}" class="w-full h-screen text-white md:hidden bg-primary">
+    <div :class="{'hidden': !isMenuOpen, 'block': isMenuOpen}" class="w-full h-screen text-white  md:hidden bg-primary">
       <div class="menu-transition">
-        <div class="flex flex-col items-center px-3 py-5">
+        <div class="flex flex-col items-center px-3 text-lg font-bold">
           <RouterLink v-for="link in links" :key="link.name" @click="toggleMenu" class="block py-2 hover:text-red-300" :to="{ name: link.name }">{{ link.label }}</RouterLink>
         </div>
       </div>
