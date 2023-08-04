@@ -170,14 +170,14 @@ const typeFilter = useTypeFilter();
 
 
 function getSvgKey(key: string, damage: Damage[]) {
-  const mondamage = damage.find((dam: Damage) => dam.location + dam.svgLocation === key);
+  const mondamage = damage?.find((dam: Damage) => dam.location + dam.svgLocation === key);
  if(mondamage && (mondamage.severity == 'SEV3' || mondamage.severity =='SEV4' || mondamage.severity =='SEV5')){
   return 'red'
  }
  if (mondamage && (mondamage.severity == 'SEV0' || mondamage.severity =='SEV1' || mondamage.severity =='SEV2')) {
   return 'blue'
  } else {
-  return
+  return ''
  }
 
 }
