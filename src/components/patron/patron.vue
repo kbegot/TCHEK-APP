@@ -157,16 +157,9 @@
   .st0{fill:none;stroke:#979797;stroke-width:0.3;}
 </style>
 <script setup lang="ts">
-import { useVehicleStore, type Damage } from '../../stores/tchek';
-import { useMatriceStore } from '../../stores/matrice'
-import { useLocationFilter, useTypeFilter,  useSeverityFilter} from '../../stores/filter';
+import type { Damage } from '../../stores/tchek';
 
 const props = defineProps(['damage']);
-const vehiculeStore = useVehicleStore();
-const matriceStore = useMatriceStore();
-const locationFilter = useLocationFilter();
-const severityFilter = useSeverityFilter();
-const typeFilter = useTypeFilter();
 
 
 function getSvgKey(key: string, damage: Damage[]) {
