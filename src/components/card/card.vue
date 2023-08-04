@@ -1,23 +1,23 @@
 <template>
+  <div class="pb-10">
     <p>Liste des dommages du véhicule {{vehiculeStore.immat}}: </p>
-    <div v-for="(damage, index) in vehiculeStore.damage" :key="index" class="flex">
-        <div>
-          <p>Id: {{ damage.id }}</p>
-          <p>Détection automatique: {{ damage.isAuto }}</p>
-          <p>Localisation: {{ getLocationName(damage.location)}} ({{ damage.location }})</p>
-          <p>Severity: {{ getSeverityName(damage.severity )}} ({{ damage.severity }})</p>
-          <p>Type: {{ getTypeName(damage.type)}} ({{ damage.type }})</p>
-          <p>Svg Location:  {{ damage.svgLocation }}</p>
-          <p>Images: ({{ damage.roiPtr.imagePtr.id }})</p>
-          <p>Price: {{ getPrice(damage.location, damage.severity) }}</p>
-          <img :src="getImageUrl(damage.roiPtr.imagePtr.id)" alt="" class="w-[200px]">
-        </div>
-        <Svg :damage="damage"></Svg>
-    </div>
+    <Svg :damage="vehiculeStore.damage"></Svg>
+  </div>
+  <div v-for="(damage, index) in vehiculeStore.damage" :key="index" class="flex py-4">
+    <div>
+      <p>Id: {{ damage.id }}</p>
+      <p>Détection automatique: {{ damage.isAuto }}</p>
+      <p>Localisation: {{ getLocationName(damage.location)}} ({{ damage.location }})</p>
+      <p>Severity: {{ getSeverityName(damage.severity )}} ({{ damage.severity }})</p>
+      <p>Type: {{ getTypeName(damage.type)}} ({{ damage.type }})</p>
+      <p>Svg Location:  {{ damage.svgLocation }}</p>
+      <p>Images: ({{ damage.roiPtr.imagePtr.id }})</p>
+      <p>Price: {{ getPrice(damage.location, damage.severity) }}</p>
+      <img :src="getImageUrl(damage.roiPtr.imagePtr.id)" alt="" class="w-[200px]">
+      </div>
+    <Svg :damage="[damage]"></Svg>
+  </div>
 </template>
-<style type="text/css">
-  .st0{fill:none;stroke:#979797;stroke-width:0.3;}
-</style>
 <script setup lang="ts">
 import { useVehicleStore } from '../../stores/tchek';
 import { useMatriceStore } from '../../stores/matrice'
