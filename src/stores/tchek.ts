@@ -19,14 +19,15 @@ export interface Damage {
   location: string;
   severity: string;
   type: string;
-  roiPtr: RoiPointer;
+  listRoiPtr: Array<RoiPointer>;
   svgLocation: string;
 }
-interface RoiPointer{
-  imagePtr: ImagePointer
+interface RoiPointer {
+  imagePtr: ImagePointer;
 }
-interface ImagePointer{
-  id: string
+
+interface ImagePointer {
+  id: string;
 }
 
 const initialState = {
@@ -48,9 +49,9 @@ export const useVehicleStore = defineStore({
             validity: 5, // en jours
             shootInspect: true,
             fastTrack: true,
-            report: true,
-            cost: true,
-            downloadRoi: true
+            cost: false,
+            report: false,
+            downloadRoi: false
         }, {
             headers: {
                 'X-API-Key': import.meta.env.VITE_API_KEY,
@@ -59,23 +60,12 @@ export const useVehicleStore = defineStore({
       }).then((response) => {this.token = response.data.token.uid});
     },
 
-    async getTchekReport() {
-      await axios.get('https://preprod.alto.tchek.fr/apiV1/report/loadtchek', {
-        params: {
-          token: 'T4E818B' //T8C7C4A roue
-                           //TEE3F6A sans roue
-                           //TDAF74E all 
-                           //TEA5F10 vraie data
-        },
-        headers: {
-          'X-API-Key': import.meta.env.VITE_API_KEY,
-          'Content-Type': 'application/json',
-        },
-      }).then((response) => {
-        this.clientLastName = response.data.data.tchek.report.clientLastName;
-        this.damage = response.data.data.damages.filter((damage: Damage) => !damage.isDeleted);
-        this.images = response.data.data.images.map((images: object) => images)
-      });
+    async getTchekReport(damageValue: any, imageValue: any) {
+
+      this.damage = damageValue.filter((damage: Damage) => !damage.isDeleted);
+      this.images = imageValue.map((images: object) => images)
+      console.log('this damage'+ this.damage)
+      
     }
     
   }  

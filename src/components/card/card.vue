@@ -11,9 +11,9 @@
       <p>Severity: {{ getSeverityName(damage.severity )}} ({{ damage.severity }})</p>
       <p>Type: {{ getTypeName(damage.type)}} ({{ damage.type }})</p>
       <p>Svg Location:  {{ damage.svgLocation }}</p>
-      <p>Images: ({{ damage.roiPtr.imagePtr.id }})</p>
+      <p>Images: ({{ damage.listRoiPtr[0].imagePtr.id}})</p>
       <p>Price: {{ getPrice(damage.location, damage.severity) }}</p>
-      <img :src="getImageUrl(damage.roiPtr.imagePtr.id)" alt="" class="w-[200px]">
+      <img :src="getImageUrl(damage.listRoiPtr[0].imagePtr.id)" alt="" class="w-[200px]">
       </div>
     <Svg :damage="[damage]"></Svg>
   </div>
@@ -23,7 +23,6 @@ import { useVehicleStore } from '../../stores/tchek';
 import { useMatriceStore } from '../../stores/matrice'
 import { useLocationFilter, useTypeFilter,  useSeverityFilter} from '../../stores/filter';
 import Svg from '../patron/patron.vue';
-
 
 const vehiculeStore = useVehicleStore();
 const matriceStore = useMatriceStore();
